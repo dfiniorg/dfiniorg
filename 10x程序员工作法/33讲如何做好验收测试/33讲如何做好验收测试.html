@@ -1,0 +1,291 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                33讲如何做好验收测试
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/12/b1/12741cb326427ca1fe40dce7e2b389b1.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>经过前面三讲的讲解，相信你对一个项目自动化应该是什么样子有了一个相对完整的认识：程序员写好程序，用构建脚本执行检查，提交代码，在服务器上打出一个发布镜像，部署到各个环境进行检查，检查好了，随时可以发布上线。</p><p>我们在前面的内容中只说了该检查，但怎么检查呢？这就轮到测试发挥作用了。</p><p>在“任务分解”的模块，我给你完整地介绍了一下开发者测试的概念，但在那个部分讲解的测试基本上还停留在单元测试和集成测试的范畴。对于整个应用该怎么测，我们并没有仔细讨论。</p><p>今天我们就来说说应用测试的话题：验收测试。</p><h2>验收测试</h2><p>验收测试（Acceptance Testing），是确认应用是否满足设计规范的测试。这种测试往往是站在用户的角度，看整个应用能否满足业务需求。</p><p>从名字上来看，验收应该是业务人员的事，但业务人员能做的最多只是验收，测试是他们无论如何也不太可能做仔细的。</p><p>所以，验收测试这件事，往往还是由技术团队自己完成，而且在很多公司，这就是测试人员的事。</p><p>时至今日，很多测试团队都拥有自动化的能力。所以，自动化验收测试自然是重点的考虑对象。今天，我们的重点就是怎么做好自动化的验收测试。</p><p>其实，验收测试应该是人们最早想到的自动化测试，早在单元测试还不流行的年代，人们就开始了对自动化验收测试的探索。有不少团队甚至还构建了自己的框架，只不过，这种框架不是我们今天理解的测试框架，而是针对着一个应用的测试框架。</p><!-- [[[read_end]]] --><p>比如，我曾经见过有人为通信软件构建的一套完整的测试框架，甚至构建了属于自己的语言，测试人员的工作就是用这种特定的语言，对系统进行设置、运行，看它是否满足自己的预期。</p><p>相对来说，他们的这种做法已经非常成熟了。但更多团队的现实情况是，自己把对应用的访问做一个简单的封装，然后，写测试就是编写代码调用这个封装。</p><p>让验收测试从各自为战的混乱中逐渐有了体系的是行为驱动开发（Behavior Driven Development）这个概念的诞生，也就是很多人知道的 BDD。</p><h2>行为驱动开发</h2><p>行为驱动开发中的行为，指的是业务行为。BDD 希望促进业务人员与开发团队之间的协作，换句话说，<strong>如果你想做 BDD，就应该用业务语言进行描述。</strong></p><p>这与我们传统上理解的系统测试有着很大的差别，传统意义上的系统测试是站在开发团队的角度，所以，更多的是在描述系统与外部系统之间的交互，用的都是计算机的术语。</p><p>而 BDD 则让我们换了一个视角，用业务语言做系统测试，所以，它是一个更高级别的抽象。</p><p>BDD 是2003年由 Dan North 提出了来的。Dan North 不仅仅提出了概念，为了践行他的想法，他还创造了第一个 BDD 的框架：<a href="http://jbehave.org">JBehave</a>。后来又改写出基于 <a href="http://www.ruby-lang.org/en/">Ruby</a> 的版本<a href="http://dannorth.net/2007/06/17/introducing-rbehave/"> RBehave</a>，这个项目后来被并到 <a href="http://rspec.info">RSpec</a> 中。</p><p>今天最流行的 BDD 框架应该是 <a href="http://cucumber.io">Cucumber</a>，它的作者就是 RSpec 的作者之一 Aslak Hellesøy。</p><p>Cucunber 从最开始的 Ruby BDD 框架发展成今天支持很多不同程序设计语言的 BDD 测试框架，比如，常见的 Java、JavaScript、PHP 等等。</p><p>BDD 框架给我们最直观的感受就是它给我们提供的一套语言体系，供我们描述应用的行为，下面是一个例子，它描述了一个交易场景，应用需要根据交易结果判定是否要发出警告。你可以感受一下：</p><pre><code>Scenario:  trader is not alerted below threshold
+ 
+Given a stock of symbol STK1 and a threshold of 10.0
+When the stock is traded at 5.0
+Then the alert status should be OFF
+
+Scenario:  trader is alerted above threshold
+ 
+Given a stock of symbol STK1 and a threshold of 10.0
+When the stock is traded at 11.0
+Then the alert status should be ON
+</code></pre><p>我们在这里的关注点是这个例子的样子，首先是描述格式：“Given…When…Then”，这个结构对应着这个测试用例中的执行步骤。Given 表示的一个假设前提，When 表示具体的操作，Then 则对应着这个用例要验证的结果。</p><p>还记得我们讲过的测试结构吗？前置准备、执行、断言和清理，这刚好与“Given…When…Then”做一个对应，Given 对应前置条件，When 对应执行，Then 则对应着断言。至于清理，它会做一些资源释放，属于实现层面的内容，在业务层面上意义不大。</p><p>了解了格式，我们还要关心一下内容。你会看到这里描述的行为都是站在业务的角度进行叙述的，而且 Given、When、Then 都是独立的，可以自由组合。也就是说，一旦基础框架搭好了，我们就可以用这些组成块来编写新的测试用例，甚至可以不需要技术人员参与。</p><p>不过，这些内容都是站在业务角度的描述，没有任何实现的内容，那实现的内容放在哪呢？</p><p>我们还需要定义一个胶水层，把测试用例与实现联系起来的胶水层，在 Cucumber 的术语里，称之为步骤定义（Step Definition）。这里我也给出了一个例子，你可以参考一下：</p><pre><code>public class TraderSteps implements En {
+    private Stock stock;
+
+    public TraderSteps() {
+        Given(&quot;^a stock of symbol {string} and a threshold of {double}&quot;, (String symbol, double threshold) -&gt; {
+            stock = new Stock(symbol, threshold);
+        });
+
+        When(&quot;^the stock is traded at {double}$&quot;, (double price) -&gt; {
+            stock.tradeAt(price);
+        });
+
+        Then(&quot;the alert status should be {string}&quot;, (String status) -&gt; {
+            assertThat(stock.getStatus().name()).isEqualTo(status);
+        })
+    }
+}
+</code></pre><h2>写好验收测试用例</h2><p>有了对 BDD 框架的基本了解，接下来的问题就是，怎么用好 BDD 框架。我们举个简单的例子，如果我们要写一个登录的测试用例，你会怎么写呢？</p><p>有一种写法是这样的，为了方便叙述，我把它转成了中文描述的格式，Cucumber 本身是支持本地化的，你可以使用自己熟悉的语言编写用例：</p><pre><code>假定 张三是一个注册用户，其用户名密码是分别是 zhangsan 和 zspassword
+当 在用户名输入框里输入 zhangsan，在密码输入框里输入 zspassword
+并且 点击登录
+那么 张三将登录成功
+</code></pre><p>这个用例怎么样呢？或许你会说，这个用例挺好的。如果你这么想，说明你是站在程序员的视角。我在前面已经说过了，BDD 需要站在业务的角度，而这个例子完全是站在实现的角度。</p><p>如果登录方式有所调整，用户输完用户名密码自动登录，不需要点击，那这个用例是不是需要改呢？下面我换了一种方式描述，你再感受一下：</p><pre><code>假定 张三是一个注册用户，其用户名密码是分别是 zhangsan 和 zspassword
+当 用户以用户名 zhangsan 和密码 zspassword 登录
+那么 张三将登录成功
+</code></pre><p>这是一个站在业务视角的描述，除非做业务的调整，不用用户名密码登录了，否则，这个用例不需要改变，即便实现的具体方式调整了，需要改变的也是具体的步骤定义。</p><p>所以，<strong>想写好 BDD 的测试用例，关键点在用业务视角描述。</strong></p><p>编写验收测试用例的步骤定义时，还有一个人们经常忽略的点：业务测试的模型。很多人的第一直觉是，一个测试要啥模型？还记得我们讲好测试应该具备的属性吗？其中一点就是 Professional，专业性。想要写好测试，同写好代码是一样的，一个好的模型是不可或缺的。</p><p>这方面一个可以参考的例子是，做 Web 测试常用的一个模型：<a href="http://martinfowler.com/bliki/PageObject.html">Page Object</a>。它把对页面的访问封装了起来，即便你在写的是步骤定义，你也不应该在代码中直接操作 HTML 元素，而是应该访问不同的页面对象。</p><p>以前面的登录为例，我们可能会定义这样的页面对象：</p><pre><code>public class LoginPage {
+    public boolean login(String name, String password) {
+      ...
+    }
+}
+</code></pre><p>如此一来，在步骤定义中，你就不必关心具体怎么定位到输入框，会让代码的抽象程度得到提升。</p><p>当然，这只是一个参考，面对你自己的应用时，你要考虑构建自己的业务测试模型。</p><h2>总结时刻</h2><p>今天我和你分享了自动化验收测试的话题。验收测试（Acceptance Testing），是确认应用是否满足设计规范的测试。验收测试是技术交付必经的环节，只不过，各个团队实践水平有所差异，有的靠人工，有的用简单自动化，一些做得比较好的团队才有完善的自动化。</p><p>自动化验收测试也是一个逐步发展的过程，从最开始的各自为战，到后来逐渐形成了一个完整的自动化验收测试的体系。</p><p>今天，我以行为驱动开发（Behavior Driven Development，BDD）为核心，给你介绍了一种自动化验收测试的方式。这个在2003年由 Dan North 提出的概念已经成为了一套比较完善的体系，尤其是一些 BDD 框架的发展，让人们可以自己的项目中实践 BDD。</p><p>我以 Cucumber 为样例，给你介绍了 BDD 验收用例的编写方式，你知道“Given…When…Then”的基本格式，也知道了要编写步骤定义（Step Definition）将测试用例与实现连接起来。</p><p>我还给你介绍了编写 BDD 测试用例的最佳实践：用业务的视角描述测试用例。在编写步骤定义时，还要考虑设计自己的业务测试模型。</p><p>其实，验收测试的方法不止 BDD 一种，像<a href="http://en.wikipedia.org/wiki/Specification_by_example">实例化需求</a>（Specification by Example，SbE）也是一种常见的方法。验收测试框架也不止 BDD 框架一类，像 Concordion 这样的工具甚至可以让你把一个验收用例写成一个完整的参考文档。</p><p>如果你有兴趣，可以深入地去了解。无论哪种做法，都是为了缩短业务人员与开发团队之间的距离，让开发变得更加高效。</p><p>如果今天的内容你只能记住一件事，那请记住：<strong>将验收测试自动化。</strong></p><p>最后，我想请你分享一下，你的团队是怎么做验收测试的呢？欢迎在留言区分享你的做法。</p><p>感谢阅读，如果你觉得这篇文章对你有帮助的话，也欢迎把它分享给你的朋友。</p><p><img src="https://static001.geekbang.org/resource/image/b0/27/b0ac100b816b69b9f00634e65cb5e427.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/48/ee/872ad07e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">西西弗与卡夫卡</span>
+                            </div>
+                            <div class="bd">之前团队就有人自己开发了一套DSL用来描述验收测试用例，自己跑各种测试，从构建依赖环境，启动虚拟机，到运行测试，不亦乐乎。我发现真有一类人迷恋这种做法，愿意把代码和测试代码以及验收测试代码写得很好，即便开始的时候要花比较多时间，他们非常享受测试通过后的绿色bar。虽然过于迷恋未必有利于项目，但据我观察大多有这样工作习惯的技术人员都很出色 <br></div>
+                            <span class="time">2019-03-27 00:45</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">我很喜欢一个说法，软件工匠，把写代码这件事当做手艺活来不断打磨。</p>
+                                <p class="reply-time">2019-03-27 08:08</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/f2/f2/11768924.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">毅</span>
+                            </div>
+                            <div class="bd">如果在理想状态下，单元测试、持续集成和系统测试等都做的很好，那么验收测试一把过是不是就顺理成章了甚至不需要了？它们几个在软件生命周期里侧重些什么？验收测试作为一个主题单独讲解是不是说明前几个还不能保证足够完善或者需要从别的视角对它们做出修正呢？ <br></div>
+                            <span class="time">2019-03-31 09:43</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你都说了“理想状态”下，现实情况是，理想状态不存在。验收测试就是站在业务的视角看待系统的一个过程，而其它几个都是站在软件本身的角度在看。<br><br>以我对开发做测试这件事的理解来看，开发人员在测试用例设计上，与测试人员还是有很大差距的，测试人员总是可以探索出不同的角度打败你。</p>
+                                <p class="reply-time">2019-03-31 13:59</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epRWw3tDTF9cBOUUvvrJ4Y3wHHZYSbyQMTKkGexQsT9RIic0hglS6vD0OHrERqjm6HQ0aTDzibiaDPag/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Geek_fe0336</span>
+                            </div>
+                            <div class="bd">请教老师，有真实项目中的一些验收测试的例子吗？有github上的项目可借鉴的吗？ <br></div>
+                            <span class="time">2019-03-27 14:49</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">我还真不知道哪个开源项目这么做，我都是在内部项目上这么做的。</p>
+                                <p class="reply-time">2019-03-30 14:38</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/17/27/ec30d30a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Jxin</span>
+                            </div>
+                            <div class="bd">公司老项目，没有测试代码，更别说bdd自动化验收代码了。不过我在尝试为核心的一些业务补充测试代码。刚好可以研究下。有价值的活动不仅仅是写需求，如果只是验收需求，整成自动化验收成本是比较高的，业务不见个愿意买单。但如果说成减少测试队友重复工作，提高需求开发速度和项目可扩展性与健壮性（利于重构，而重构能产生以上价值），并给出大概的量化指标，大部分业务都会再斟酌下的。 <br></div>
+                            <span class="time">2019-03-27 09:34</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/43/2d/af86d73f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">enjoylearning</span>
+                            </div>
+                            <div class="bd">作者给出的参考链接和一些参考书名都很好，国内项目实施BDD的很少吧，可能客户觉得这很浪费时间，或者他们觉得开发做这个他们要承受一些成本 <br></div>
+                            <span class="time">2019-03-27 08:56</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不做的理由有一万个，做的理由有一个就够了！</p>
+                                <p class="reply-time">2019-03-27 14:21</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/99/c9/a7c77746.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">冰激凌的眼泪</span>
+                            </div>
+                            <div class="bd">验收测试是不是针对业务需求的测试？ <br></div>
+                            <span class="time">2019-03-27 08:34</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">对，应该是这样的。</p>
+                                <p class="reply-time">2019-03-27 08:44</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/8e/a3/d7e5fe8a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">shniu</span>
+                            </div>
+                            <div class="bd">自动化验收测试确实是很好的东西，比如在回归测试，省去了很多的重复工作。但我理解BDD的初衷是驱动产品、业务、开发、测试等去深入讨论沟通需求，在还没有真的写代码的时候去实例化story，并一起定义验收用例，让每个人对需求的理解都很透彻，当然特别注意的是要从统一的业务角度去描述，可见，真的做好BDD是需要不断的尝试和总结的。 <br></div>
+                            <span class="time">2019-03-27 08:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/1a/66/2d9db9ed.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">苦行僧</span>
+                            </div>
+                            <div class="bd">验收测试和常规的集成测试 有什么区别？ <br></div>
+                            <span class="time">2019-03-27 08:15</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/3a/93/05d26f52.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">晓小东</span>
+                            </div>
+                            <div class="bd">我的团队在做一个web项目， 随着业务复杂， 一个迭代开发完成后， 经常会发现系统某些隐藏的功能用例不在了，除了前面所讲项目中增加单元测试， code-review 外， 如果从自动化验收测试角度， 该如何检查出这样的问题。我们团队测试一般针对当前迭代功能需求进行人工验收测试。很难做不到把系统所有用例都进行一番测试。所有很是一个头疼事， 每次迭代都存在风险。 <br></div>
+                            <span class="time">2019-03-27 08:10</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83eoOGZ6lbHiboIZMN9USbeutnmCWBahVLtSlKlIENKvrZQCUQzpzeZQOxTntIkBUeDk6qZUPdqmfKrQ/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">没有昵称</span>
+                            </div>
+                            <div class="bd">老师，selenium跟Cucumber，端到端测试跟验收测试，有区别吗？ <br></div>
+                            <span class="time">2019-03-27 08:00</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">对比这里的例子，Selenium是用来实现这里的步骤定义的。</p>
+                                <p class="reply-time">2019-03-27 08:45</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/bvj76PmeUvW8kokyu91IZWuRATKmabibDWbzAj2TajeEic7WvKCJOLaOh6jibEmdQ36EO3sBUZ0HibAiapsrZo64U8w/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">梦倚栏杆</span>
+                            </div>
+                            <div class="bd">我没有明白举那个例子的意义，配置文件写了几段话，程序里写胶水代码去支持，这个感觉也不动态啊，这不是绑死了吗？ <br></div>
+                            <span class="time">2019-03-27 06:41</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这里面在业务层需要组合的代码是 Given...When...Then 的部分。当你有了足够的基础描述之后，就可以任意组合这些语句了。至于胶水层代码，它本来就是为了支持每一个 Given&#47;When&#47;Then 的实现，不需要更多的能力。</p>
+                                <p class="reply-time">2019-03-27 08:07</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

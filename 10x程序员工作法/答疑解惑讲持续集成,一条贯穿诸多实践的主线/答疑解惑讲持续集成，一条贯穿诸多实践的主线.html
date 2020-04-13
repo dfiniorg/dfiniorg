@@ -1,0 +1,153 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                答疑解惑讲持续集成，一条贯穿诸多实践的主线
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/36/7b/36d30fa1beded8dbf8401427ea17987b.png">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>“沟通反馈”模块又告一段落了，在这个模块中，我们把自己与真实世界的距离又拉近了一步。</p><p>一方面，我们强调主动沟通，把自身的信息更有效地传达出去；另一方面，我们也重视反馈，让真实世界的信息，更多地回到我们身边。同学们分享了很多经验，也提出了不少的问题。</p><p>在今天的答疑中，我选择了几个非常好的问题，从不同的角度丰富一下之前讲解的内容。</p><h2>问题1：单元测试做不好，是否会影响到 CI 的效果？</h2><p><span class="orange">毅 </span>同学提到</p><blockquote>
+<p>如果单元测试做的不到位，或者不满足A-TRIP，是不是执行CI的效果就会弱很多？<br>
+——<a href="http://time.geekbang.org/column/article/83461">《24 | 快速反馈：为什么你们公司总是做不好持续集成？》</a></p>
+</blockquote><p>这是一个非常好的问题，问到了各种实践之间的关联。我们在前面用了两讲的篇幅介绍了持续集成这个实践，为什么要做持续集成以及如何做好持续集成。</p><p>在自动化模块，我们还会在这个基础之上继续延伸，介绍持续交付，这些内容是从操作的层面上进行介绍，都是对单一实践的描述。</p><p>利用这次答疑的机会，我再补充一个维度，谈谈实践之间的关联。</p><p><strong>持续集成的价值在于，它是一条主线，可以将诸多实践贯穿起来。</strong>也就是说，想要真正意义上做好持续集成，需要把周边的很多实践都要做好。</p><p>我们具体地说一下这些实践。但请记住我们说过的，做好持续集成的关键是，快速反馈。</p><!-- [[[read_end]]] --><p>比如，我们想要做好 CI，需要有一个稳定的开发分支，所以，最好采用主开发分支的方式。想用好主分支开发，最好能够频繁提交；而频繁提交需要你的任务足够小，能够快速完成；将任务拆解的足够小，需要你真正懂得任务分解。要想在一个分支上开发多个功能，那就需要用 Feature Toggle 或者 Branch by Abstraction。</p><p><img src="https://static001.geekbang.org/resource/image/58/91/58da94dc5f4084702f3dcd1921330691.jpg" alt=""></p><p>在这条线上，你有很多机会走错路。比如，你选择了分支开发模式，合并速度就不会太快，一旦反馈快不了，CI 的作用就会降低；再者，如果不能频繁提交，每次合并代码的周期就会变长，一旦合并代码的周期变长，人们就会倾向于少做麻烦事，也就会进一步降低提交的频率，恶性循环就此开启。</p><p>同样，即便你懂得了前面的道理，不懂任务分解，想频繁提交，也是心有余而力不足的。而多功能并行开发，则会让你情不自禁地想考虑使用多分支模型。</p><p>我们再来看另外一条线，也就是这个问题中提到的测试。</p><p>想做好 CI，首先要有可检查的东西，什么是可检查的东西，最简单的就是编译、代码风格检查，这些检查可以无条件加入构建脚本。但更重要的检查，应该来自于测试，而要想做好 CI，我们要有测试防护网。</p><p><img src="https://static001.geekbang.org/resource/image/42/81/4248f24d3f9ea15dc22b6d0538fc9c81.jpg" alt=""></p><p>什么叫测试防护网呢？就是你的测试要能给你提供一个足够安全的保障，这也就意味着你要有足够多的测试。换个更技术点的术语来说，就是要有足够高的测试覆盖率。</p><p>如果测试覆盖率不够，即便提交了代码，CI 都通过了，你对自己的代码依然是没有信心的，这就会降低 CI 在你的心中的地位。</p><p>如果想有足够高的测试覆盖率，你就要多写单元测试。我们在前面讲过测试金字塔了，上层测试因为很麻烦，你不会写太多，而且很多边界条件，通过上层测试是覆盖不到的，所以，测试覆盖率在经过了初期的快速提升后，到后期无论如何是提上不去的。要想提升测试覆盖率，唯有多写单元测试。</p><p>要想多写单元测试，就需要编写可以测试的代码，而要想编写可测的代码，就要懂软件设计，将系统之间耦合解开。</p><p>通过上面的分析，你已经看出来做好持续集成，让它完全发挥自己的价值，需要做的工作还是相当多的。但也请别灰心，实际上，我做咨询时，很多团队就是从持续集成下手，开始改造他们的软件开发过程。</p><p>这是一个“以终为始”的思路，先锁定好目标，就是要把持续集成做好，然后围绕着这个目标改进其他做得欠佳的方面。比如，原来是多分支的，就先固定一个主分支，然后，逐步改变大家的开发习惯，让他们进入单分支的开发状态。</p><p>再比如，原来没有测试，那就在 CI 上先加一个最低的测试覆盖率，然后定期去提高，比如，第一周是10%，第二周是20%，这样一步一步地提高，开发团队可以一边开发新东西，一边为既有代码补测试。等到覆盖率到了一定程度，提高有困难了，团队就可以考虑怎么改进设计了。</p><p><strong>所以，CI 作为一个单独的实践，本身是很简单的，但它可以成为提纲挈领的主线，帮助团队不断改善自己的开发过程。</strong></p><h2>问题2：老板参加复盘，不敢说真话怎么办？</h2><p><span class="orange">grass10happy</span> 同学提到</p><blockquote>
+<p>复盘是不是最好是团队内部进行，每次老板参加复盘，好像就没人说出真话了。<br>
+——<a href="http://time.geekbang.org/column/article/83841">《25 | 开发中的问题一再出现，应该怎么办？》</a></p>
+</blockquote><p>感谢 grass10happy 同学这个提问，把我因为篇幅原因省掉的一个部分给挽救了回来。</p><p>回顾会议的目的在于改进，它不仅仅在于让大家参与进来，更重要的是让团队成员能够敞开心扉，把问题暴露出来。<strong>暴露问题，是改进的前提条件。</strong></p><p>我在<a href="http://https://time.geekbang.org/column/article/84374">《27 | 尽早暴露问题： 为什么被指责的总是你？》</a>这篇文章中说过了，对于很多人来说，敢不敢暴露问题是个心理问题。你会发现，同事之间聊天，普遍是没有任何压力的，你几乎可以放心大胆地谈论各种问题，而一旦有领导在，很多顾虑就会出现了。</p><p>于是，问题就变成了怎么能够让大家放心地把问题暴露出来，一个办法就是设置一个安全的环境。</p><p>怎么设置一个安全的环境呢？对于标准的回顾会议来说，第一步应该是做安全性检查。</p><p>先由大家投票，最简单的方式是就是，给当前的环境打分。你觉得可以畅所欲言就打1分，你觉得还好，就打0分，如果你觉得不方便表达，比如，你看领导在，很多问题不适合反馈，就打-1。</p><p>每个与会者都投出属于自己的一票。然后，主持人根据投票结果决定回顾会议是否进行，比如，有人投-1就不能继续。</p><p>会议能继续固然好，一旦会议不能继续，可以有多种解决方案。比如，把在场职位最高的人请出去，这个人可能就是老板。老板也许心里很不爽，但在这个过程中，大家都是按照规则在办事，并不存在对谁另眼相待的情况。</p><p>当老板离席之后，我们再进行一轮投票，判断环境是否变得安全了。如此反复，也许要进行几轮投票，直到大家觉得安全了。</p><p>当然，也有可能进行多轮，有人始终觉得不安全，那可能最好的选择是，取消今天的回顾会议，换个时间地点从头再来。而项目负责人则需要私下里解决一下团队内心安全的问题。</p><p>通过安全性检查之后，我们才会进入回顾会议的正式环节，具体内容在正文中已经讲过了，这里就不再赘述了。</p><h2>问题3：国内的技术信息落后吗？</h2><p><span class="orange">One day</span> 提到</p><blockquote>
+<p>老师能否多多介绍一下技术方面的网站之类的，新技术发展见闻之类的，或者技术总结方面。国内的技术基本都多少有些滞后。<br>
+——<a href="http://time.geekbang.org/column/article/83082">《23 | 可视化：一种更为直观的沟通方式》</a></p>
+</blockquote><p>这个问题让我感觉自己一下子回到了好多年前。我刚入行的那会，学习新知识确实要多看看英文网站，当时的信息传播速度不快，中文技术网站不多。</p><p>但在今天，显然已经不是这样了，如果只是想获得最新的技术信息，我在<a href="http://time.geekbang.org/column/article/83082">《23 | 可视化：一种更为直观的沟通方式》</a>这篇文章中介绍了 InfoQ 和技术雷达，这上面的信息量已经很丰富了。你再只要稍微看几个网站，关注几个公众号，各种信息就会送到你面前。</p><p>所以，你根本不用担心会错过什么新技术，反倒是信息量太大，需要好好过滤一下。</p><p><strong>国内程序员真正落后的不是信息，而是观念。</strong></p><p>我讲的很多内容是软件工程方面的，以我对国内外程序员的了解来看，发达国家的程序员在这些内容的普及上，要比国内程序员好很多。</p><p>国内程序员的平均水平，大多停留在实现一个功能的理解上，而发达国家的程序员做事要专业许多。所以，以专业素养来看，国内程序员还有很大的提升空间。</p><p>在经济学里有“边际效用递减法则”（The Law Of Diminishing Marginal Utility），说的是当你手里某一物品总数越来越多时，新增一个单位该物品所获得的效用通常会越来越少。</p><p>当你的技术知识积累到一定程度时，还采用原来的学习方式，就很难获得真正意义上的提高，这是很多人抱怨 IT 行业不好混的原因。</p><p>同时，这也是我开设这个专栏的初衷，希望给大家一些不同的视角，一些新的前进动力。</p><p>好，今天的答疑就到这里。我想请你分享一下，你是怎么理解这些问题的呢？欢迎在留言区写下你的想法。</p><p>感谢阅读，如果你觉得这篇文章对你有帮助的话，也欢迎把它分享给你的朋友。</p><p><img src="https://static001.geekbang.org/resource/image/b0/27/b0ac100b816b69b9f00634e65cb5e427.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/e9/0b/53bf91d3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">WL</span>
+                            </div>
+                            <div class="bd">想请教一下老师之前讲测试驱动开发，写测试用例的时候都没有写代码和方法，那怎么写测试，没有方法可以调用，这是怎么处理的 <br></div>
+                            <span class="time">2019-03-12 13:13</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/48/ee/872ad07e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">西西弗与卡夫卡</span>
+                            </div>
+                            <div class="bd">老板参加复盘这趴中的安全检查有意思。就像急救流程准则中的第一条，确认环境安全，其次才是进行急救。<br>团队中就出现过，复盘过了一段时间，有成员私底下反馈说复盘没有效果。如果当时就能反馈就好了。<br>除了复盘，我觉得会议之后也要有检查，让大家投票，会议是否达成目的，会议是否有效，会议是否需要改进，应该如何改善。<br>及时寻求有效反馈，是持续改进的要点 <br></div>
+                            <span class="time">2019-03-11 00:18</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">回顾会议一般是定期举行，比如，两周一次，行动项就放在桌面上检查。如果不能做到定期回顾，那倒真的需要安排专门的检查，但那样做就重了。</p>
+                                <p class="reply-time">2019-03-11 08:09</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/96/63/fdbf75eb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">捞鱼的搬砖奇</span>
+                            </div>
+                            <div class="bd">上面没写完就提交。。。<br>代码上持续集成相对好些。首先是拆解任务，把没个任务分成最小的颗粒，每每完成一个就可提交。这里难题是任务分解，如何合理的拆碎任务需要一定时间的锻炼。这个时候可以借鉴行业的最佳实践如果是技术上的可以看看成熟的解决方案等等。深入的学习。 <br></div>
+                            <span class="time">2019-03-11 00:41</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">当你开始把知识贯穿起来，知识之间就了有了更多的连接。</p>
+                                <p class="reply-time">2019-03-15 07:53</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/96/63/fdbf75eb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">捞鱼的搬砖奇</span>
+                            </div>
+                            <div class="bd">我觉得程序员自己的学习和提交代码是类似的。前者贯穿不停的学习，后者惯着高频度的提交。<br>二者的不同在于学习到了某一阶段，需要换个思路。比如某些时候把发横向学习变为纵向学习，而某些时候有需要把纵向学习改为横向学习。如今的时代信息爆炸，有价值的东西多，噪音也多。两者参杂在一起，难以区别。即便是除去了噪音在一堆信息里找出适合自己的或者自己迫切需要的不是个容易的事情。 <br></div>
+                            <span class="time">2019-03-11 00:38</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

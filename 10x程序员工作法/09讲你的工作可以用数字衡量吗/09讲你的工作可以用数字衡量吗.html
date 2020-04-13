@@ -1,0 +1,229 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                09讲你的工作可以用数字衡量吗
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/06/c4/069b01d2a6803baa7ac5a17408a0d2c4.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>今天的分享从日常工作开始。请你回想一下，你每天到岗之后做的第一件事是什么呢？然后你来猜猜我的答案是什么？你可能猜不到，我每天到公司之后，第一件正事是<strong>看数字</strong>。</p><p>我现在服务于一家做数字资产的公司，我们提供的是一个24小时运行的服务。从加入这家公司的第一天开始，公司的人就给我不断灌输一个重要理念——看数字。在我座位的正前方，摆着一个巨大的显示器，上面展示着各种不断变换的曲线、柱状图和数字，这些数字反映的是各种系统运行的指标。</p><p>我们就是每天看着这些指标，来发掘一些线上系统问题的，一旦某些指标出现自己不能理解的异常，就要着手调查。</p><p>你或许会纳闷，我们不是在探讨“以终为始”吗？怎么变成了一个关于监控的讨论呢？别急，我们确实还在讨论“以终为始”，因为数字是诠释“终”的最好方式。</p><p>我们前面讨论了各种“终”，但通常靠语言定义的“终”，或多或少都会存在一些模糊的地方，也就是容易产生误解的地方。而数字却是一个明明白白的“终”。比如，测试覆盖率要求100%，即便你做到了99.9%，不达标就是不达标，没什么好说的，说破天也是不达标。</p><p>再比如，之前内容我们讲到精益创业时，提到了一个重要的反馈循环：开发（build）-测量（measure）-认知（learn）。你会发现，在这个循环中，开发（build）是可控的，认知（learn）必须是得到反馈之后才能有的。所以，这里面最需要我们回答的问题是测量（measure）。而这里的测量，最好的检验标准当然就是数字。</p><!-- [[[read_end]]] --><p>或许你会说，数字我们都很熟，还用讲吗？不过在我看来，你还真的未必习惯于使用数字。</p><h2>熟悉而陌生的数字</h2><p>从进化的角度来看，人们做事更多是依赖于直觉的。数字，是人类在非洲大草原上奔跑了许久之后才创造出来的东西。著名科普著作《从一到无穷大》的开篇有这么一个故事：</p><blockquote>
+<p>两个匈牙利贵族决定做一次数数的游戏，看谁说出的数字大。<br>
+一个贵族说：“好，那你先说吧！”<br>
+另一个绞尽脑汁想了好几分钟，说了一个数字：“3”。<br>
+现在轮到第一个贵族苦思冥想了，他想了一刻钟，然后说：“好吧，你赢啦!”</p>
+</blockquote><p>这个故事听起来有些荒诞，但一些非洲探险家证实，在某些原始部族里，不存在比3大的数词。如果问他们有几个孩子，而这个数字大于3的话，他就会回答“许多个”。</p><p>虽然我们中华民族是一个重视教育的民族，现在也都承认数学是一门重要的基础知识。但我们还是习惯性地观其大略，因为在日常生活领域里，除了买东西发工资，需要对数字斤斤计较的场合并不多。</p><p>历史的车轮在不停地滚滚向前，当今社会所面临的复杂度已经远远超过凭直觉就能把事情做好的程度。</p><p><strong>一些人说，自己靠直觉就能把事情做好，其实这是一种误解，因为那种所谓的直觉，通常是一种洞见（Insight），洞见很大程度上依赖于一个人在一个领域长期的沉淀和积累，而这其实是某种意义上的大数据。</strong></p><p>我们都在说，人类马上就要进入智能时代了。之所以这么说，主要是现在人工智能技术不断地向前发展着。而人工智能作为一门在50年代就已经问世的技术，直到最近几年才得到大踏步的前进，主要归功于基础设施的发展。</p><p>在人工智能领域，基于统计的方法早就在学术界提了出来，但由于当时的技术条件所限，人们的数据采集和存储能力都有限，当时的“大”数据和今天的大数据完全不是一个量级的概念。</p><p>直到进入到互联网时代，随着处理数据量的增加，基础设施在不断地拓展，进而促使人们采集更多的数据，这个正向反馈也造就了今天的大数据。</p><p>原本因为缺乏足够数据支撑，难以施展拳脚的 AI 算法，在今天一下子有了足够的表演空间，从一个边缘角色成为了舞台中心的主角。</p><p>今天谈到人工智能，人们主要会谈三件事：<strong>算法、算力和数据。</strong>算法几乎是行业共有的，而算力在云计算普及的今天也不再是稀缺资源，所以，数据几乎成了兵家必争之“物”。于是，我们看到的现象是各个公司都在努力地搜集各种数据，让数据成为自己的竞争力。所以，在大方向上，数据采集是一个行业共识。</p><p>但是，作为这个世界上最了解数据价值的一批人，我们程序员只是在努力地把数据用于不断改善别人的生活，而对于自己日常工作的改善，则思考得少之又少。</p><p>我们更习惯的讨论方式依然是靠直觉。比如：增加了这个特性<strong>可能</strong>会让用户增长，做了这个调整<strong>应该</strong>会让系统的压力变小。</p><p>在一些简单的情形下，或者说大家信息对称、知识背景相差无几的情况下，这样的讨论是很容易得到认同的。<strong>而当事情复杂到一定程度时，简单地靠感觉是很难让人相信的。</strong></p><p>所以，在我们的工作中，经常会发生的一个现象是，一个人说，我觉得这个有作用，另一个人说，我觉得那个没有。几个“觉得”下来，双方就开始进入了隔空对话的环节，谁也无法说服谁。</p><p>如果换成用数字的方式进行讨论，效果就会更好。有一次，为了改善用户体验，我们准备进行一次主页改版。产品团队希望在主页上加上大量的内容，而开发团队则认为太多的内容会导致主页加载变慢，进而造成用户体验下降。</p><p>正当这个对话即将进入“空对空”的讨论之时，我们找到了一个测量指标：主页加载速度。只要保证主页加载速度，产品团队就可以按照自己的理解来做调整。于是，一个即将不可挽回的讨论，变成了在一定约束条件下的讨论，双方谁也不再思维发散，讨论就能继续推进了。</p><p>如果你认同了数据本身的价值，那么再结合“以终为始”的理念，我们就应该在着手做一件事之前，先来想怎么去测量。无论是在讨论产品特性，还是功能开发，“信口雌黄”是容易的，落到数字上，人们就会多想一下，这是对彼此的约束。</p><h2>从数字出发</h2><p>前面的内容我们都是在说应该重视测量指标，重视数字。接下来，我就分享下几个我在实际工作中运用数字的案例，让你看看习惯用数字去思考问题之后，会拓宽哪些思考的维度。</p><p>首先是基于数字进行技术决策。有一次，我们打算做一个技术改进，给系统增加一些缓存，减轻数据库的压力。大家一起设计了两个技术方案。如果查询是特定的，我们就准备简单地在某些方法上加上缓存；如果查询是五花八门的，就准备用一个中间件，使用它的查询方案。</p><p>系统现在的情况到底是什么样的呢？我们发现并不能立刻回答这个问题。于是，大家决定在系统中增加一些统计指标，让数据给我们答案。然后根据数据反映出的情况，进行具体的决策。</p><p>其次是一个准备上线的案例。当时，我们是要做一个影响力比较大的系统升级，因为这是一个系统的关键模块，上下游系统都会受到影响。</p><p>谁也不能确定哪个模块会在上线过程中出问题。于是，设计了一个全新的数据面板，将相关的几个模块的核心指标都摆在上面。而我们要做的就是在上线的同时，观察这些指标的变化。</p><p>所幸的是，这次上线影响不大，几个指标一路平稳，而大家的信心就源自这些提前准备好的指标。</p><p>再次，看一个从数字中发现问题的例子。由于各种历史原因，我们的重点指标面板上，会有几个指标表示的是类似的东西。</p><p>比如，某个模块的处理能力，一个指标是站在这个模块内部度量的，而另一个指标则是由这个模块上下游系统度量的。在大多数情况下，它们的表现是一致的。结果有一天两者突然出现了很大的差异，内部度量表现依然良好，而外部度量则出现了很大的延迟。</p><p>于是，我们开始追问为什么。一路追寻下来，我们发现，是这个模块内部需要定期将内部状态持久化下来，而在那个时间段内，这个模块就会停止从上游读取数据。所以，在内部看一切正常，而外部看则延迟较大。随后，我们找到了方案，解决了这一问题。</p><p>最后再说一个行业中的例子，据我所知，行业里的某些公司已经开始做所谓的 AIOps，也就是通过人工智能的方式，从数据中，发现更多运维的问题。无论哪种做法，都是为了<strong>从数字中发现问题，让系统更稳定。</strong></p><p>我的一个同事有个观点非常值得玩味，他说，从数字上看，好的系统应该是“死水一潭”。</p><p>我是赞同这个观点的，因为出现波动尤其是大幅度波动，又不能给出一个合理解释的话，就说明系统存在着隐患。而让系统稳定，正是我们工作的一个重要组成部分。</p><p>回到这一讲的开头，我说每天工作中的一个重要组成部分就是看数字，其实就是在尝试着从数字的趋势中发现问题，如今团队已经习惯了“给个数字看看”这样的沟通方式，内部扯皮的机会也相应地减少了一些。</p><h2>总结时刻</h2><p>总结一下今天的内容。随着智能时代的来临，人类社会开始逐渐认识到数据的重要性。但我们这群 IT 人在通过数据为其他人服务的同时，却很少把数字化的思维带到自己的工作范围内。这也是工作中很多“空对空”对话的根源所在。</p><p>结合着“以终为始”的思考，如果我们可以在一开始，就设计好测量工作有效性的指标，那么就可以更有目的性地去工作了。</p><p>而如果我们习惯了用数字去思考，就可以在很多方面让数字帮助我们。我举了几个小例子，比如：基于数据进行技术决策、预先设定系统指标，以及发现系统中的问题等等。希望你也可以把数字思维带到你的日常工作中。</p><p>如果今天的内容你只记住一件事，那请记住：<strong>问一下自己，我的工作是不是可以用数字衡量。</strong></p><p>最后，我想请你分享一下，你的工作中，有哪些应用数字解决问题的场景呢？欢迎在留言区写下你的想法。</p><p>感谢阅读，如果你觉得这篇文章对你有帮助的话，也欢迎把它分享给你的朋友。<br>
+<img src="https://static001.geekbang.org/resource/image/b0/27/b0ac100b816b69b9f00634e65cb5e427.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIUXWqIBiadT4BYND0k3XwORqkW8j4q0GLyaXylG5ibfNnQaAQ26PQIvd4bp9uFrlp9QhV4YXpVfdzg/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">大帅哥</span>
+                            </div>
+                            <div class="bd">线上接口日志统计少，很多业务日志虽然也加上了，但很少去关注。更多的情况是不知道打印哪些日志，更别说相关指标的数字了，上线新功能时只能人工的访问下接口，一个接口异常时，每天都需要花费不少时间去定位。现在有了日志和采集统计，一有问题立马可以看出来，随时做好回滚的准备。 <br></div>
+                            <span class="time">2019-01-15 10:45</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">日志也是一个很有趣的话题，少了不行，多了也不好。</p>
+                                <p class="reply-time">2019-01-15 12:24</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/08/17/e63e50f3.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">彩色的沙漠</span>
+                            </div>
+                            <div class="bd">数据对技术方案选定，运营方案的改进，验证产品特性是否合理，面试，提供强有力的支撑作用。&quot;数字也是沟通的一把利器，用数字说话，避免空谈&quot;，可以提高沟通效率。<br>每个公司都有绩效衡量一个员工，但是我遇到的公司对于绩效这件事，衡量指标都都比较主观，唯一比较客官的指标是代码量和BUG数，不知道老师经历的公司是怎么衡量绩效这件事的，谢谢！ <br></div>
+                            <span class="time">2019-01-15 09:58</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你会发现，我在建议用数字来发现问题和解决问题，但我不倾向用数字做为绩效，因为太具有误导性了，至少现在还没有哪个指标是令人信服的。我知道很多公司用代码量和BUG数，但我认为，这些指标应该用来发现问题，而不是当作绩效标准。</p>
+                                <p class="reply-time">2019-01-15 11:05</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/33/13/7d0f6d38.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">AlanP</span>
+                            </div>
+                            <div class="bd">感觉公司要做到CMM第4级还是有难度的，需要有人持续推进，也需要每个人都有量化的意识 <br></div>
+                            <span class="time">2019-01-15 09:17</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">个人并不推荐CMM这种重量级的软件过程，但持续改进和量化的意识是要有的。</p>
+                                <p class="reply-time">2019-01-15 11:06</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">geoxs</span>
+                            </div>
+                            <div class="bd">我们的产品之前没有什么监控数据，有一次系统莫名其妙所有的api都变慢了，分析不出原因。最后还是写了个小程序读取系统日志，统计一段时间内每个api的调用情况（调用时间、调用时长、调用次数等等），导出成统计数据以后，一下子就清晰了。 <br></div>
+                            <span class="time">2019-01-15 08:49</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">做得不错！</p>
+                                <p class="reply-time">2019-01-18 12:02</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">246小言</span>
+                            </div>
+                            <div class="bd">看得出老师的用心 <br></div>
+                            <span class="time">2019-01-14 22:12</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/16/0d/d7264bd4.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">大彬</span>
+                            </div>
+                            <div class="bd">特别认同。上周我把一个方案进行推迟了，让同事去搜集某项指标的数据，没数据，一切方案都是空谈。<br><br>AB测试，留言量，阅读量，转发量一切数据都是下一步决策和改进的基础 <br></div>
+                            <span class="time">2019-01-14 13:19</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你的做法值得推广！</p>
+                                <p class="reply-time">2019-01-15 12:23</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEIEjB0qBiczZI2dG8O3KI3lSt2R2ibgvBeVuhRbj3n26rG1ceqYL4diaq5jRQQul0zDwPNlpQ8FlOzYA/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">蛀牙</span>
+                            </div>
+                            <div class="bd">对于一线的系统操作员，我们无法得知常用的查询条件，通过记录统计查询条件的数字，可以针对复杂查询进行优化。这是我能想到的我们公司以始为终用数字测量的应用场景。 <br></div>
+                            <span class="time">2019-01-14 13:19</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/48/ee/872ad07e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">西西弗与卡夫卡</span>
+                            </div>
+                            <div class="bd">比如开发常常关注的是产品经理提的功能有没有实现，实际上也应该了解做出来的有多少人使用，每个页面有多少人使用。<br><br>此外，看开发是否努力勤奋，不要光听他说，而是要看看他提交git有多频繁、提交的时间段、代码量有多少。代码质量可以用bug数&#47;代码量来衡量。当然，这些量化未必科学，甚至会被误用，但总胜过凭印象拍脑袋的判断。 <br></div>
+                            <span class="time">2019-01-14 00:48</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">特别认同你的这个说法，量化好过于空口白牙，但什么工具都抵不过滥用。</p>
+                                <p class="reply-time">2019-01-14 08:51</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/20/27/b4da1c0f.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">王小勃</span>
+                            </div>
+                            <div class="bd">打卡<br> <br></div>
+                            <span class="time">2019-01-14 00:21</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                25讲开发中的问题一再出现，应该怎么办
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/06/1e/060aa306178720ddd0b9f650e5cefe1e.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>看过《圣斗士星矢》的同学大多会对其中的一个说法印象颇深：圣斗士不会被同样的招数击败两次。</p><p>我们多希望自己的研发水平也和圣斗士一样强大，可现实却总不遂人愿：同样的线上故障反复出现，类似的 Bug 在不同的地方一再地惹祸，能力强的同学每天就在“灭火”中消耗人生。我们难道就不能稍微有所改善吗？</p><p>如果在开发过程中，同样的问题反复出现，说明你的团队没有做好复盘。</p><h2>什么是复盘？</h2><p>复盘，原本是一个围棋术语，就是对弈者下完一盘棋之后，重新把对弈过程摆一遍，看看哪些地方下得好，哪些下得不好，哪些地方可以有不同甚至是更好的下法等等。</p><p><strong>这种把过程还原，进行研讨与分析的方式，就是复盘。</strong></p><p>现如今，复盘的概念已经被人用到了很多方面，比如，股市的复盘、企业管理的复盘，它也成为了许多人最重要的工具，帮助个体和企业不断地提升。这其中最有名的当属联想的创始人柳传志老爷子，他甚至把“复盘”写到了联想的核心价值观里。</p><p>为什么复盘这么好用呢？在我看来有一个重要的原因，在于<strong>客体化。</strong></p><p>俗话说，当局者迷，旁观者清。以我们的软件开发作为例子，在解决问题的时候，我们的注意力更多是在解决问题本身上，而很少会想这个问题是怎么引起的。</p><p>当你复盘时，你会站在另外一个视角，去思考引起这个问题的原因。这个时候，你不再是当事者，而变成了旁观者。你观察原来那件事的发生过程，就好像是别人在做的一样。你由一个主观的视角，变成了一个客观的视角。</p><!-- [[[read_end]]] --><p><strong>用别人的视角看问题，这就是客体化。</strong></p><p>在软件开发领域，复盘也是一个重要的做法，用来解决开头提到那些反复出现的问题，只不过，它会以不同的方式呈现出来。</p><h2>回顾会议</h2><p>回顾会议是一个常见的复盘实践，定期回顾是一个团队自我改善的前提。回顾会议怎么开呢？我给你分享我通常的做法。</p><p>作为组织者，我会先在白板上给出一个主题分类。我常用的是分成三类：“做得好的、做得欠佳的、问题或建议”。</p><p>还有不同的主题分类方式，比如海星图，分成了五大类：“继续保持、开始做、停止做、多做一些、少做一些”五类。</p><p>分类方式可以根据自己团队的喜好进行选择。我之所以选用了三类的分类方式，因为它简单直观，几乎不需要对各个分类进行更多的解释。</p><p>然后，我会给与会者五分钟时间，针对这个开发周期内团队的表现，按照分类在便签上写下一些事实。比如，你认为做得好的是按时交付了，做得不好的是 Bug 太多。</p><p>这里面有两个重点。<strong>一个是写事实，不要写感受。</strong>因为事实就是明摆在那里的东西，而感受无法衡量，你感觉好的东西，也许别人感觉很糟糕。</p><p>另外，<strong>每张便签只写一条，因为后面我要对便签归类。</strong>因为大家是分头写的，有可能很多内容是重复的，所以，要进行归类。</p><p>五分钟之后，我会号召大家把自己写的便签贴到白板上。等大家把便签都贴好了，我会一张一张地念过去。</p><p>这样做是为了让大家了解一下其他人都写了些什么，知道不同人的关注点是什么。一旦有哪一项不清楚，我会请这张便签的作者出来解释一下，保证大家对这个问题的理解是一致的。在念便签的同时，我就顺便完成了便签归类的工作。</p><p>等到所有的便签都归好类，这就会成为后续讨论的主题，与会者也对于大家的关注点和看到的问题有了整体的了解。</p><p>做得好的部分，是大家值得自我鼓励的部分，需要继续保持。而我们开回顾会议的主要目的是改善和提升，所以，我们的重点在于解决做得不好的部分和有问题出现的地方。</p><p>在开始更有针对性的讨论之前，我会先让大家投个票，从这些分类中选出自己认为最重要的几项。我通常是给每人三票，投给自己认为重要的主题。每个人需要在诸多内容中做出取舍，你如果认为哪一项极其重要，可以把所有的票都投给这个主题。</p><p>根据大家的投票结果，我就会对所有的主题排出一个顺序来，而这就是我们要讨论的顺序。我们不会无限制的开会，所以，通常来说，只有最重要的几个主题才会得到讨论。</p><p>无论是个人选择希望讨论的主题，还是团队选择最终讨论的主题，所有人都要有“优先级”的概念在心里。然后，我们就会根据主题的顺序，一个一个地进行讨论。</p><p>讨论一个具体的主题时，我们先会关注现状。我会先让写下反馈意见的人稍微详细地介绍他看到的现象。比如，测试人员会说，最近的 Bug 比较多，相比于上一个开发周期，Bug 增加了50%。</p><p>然后，我会让大家分析造成这个现象的原因。比如，有人会说，最近的任务量很重，没有时间写测试。</p><p>再下来，我们会尝试着找到一个解决方案，给出行动项。比如，任务重，我们可以让项目经理更有效地控制一下需求的输入，再把非必要的需求减少一下；测试被忽略了，我们考虑把测试覆盖率加入构建脚本，当测试覆盖率不足时，就不允许提交代码。</p><p>请注意，<strong>所有给出的行动项应该都是可检查的，而不是一些无法验证的内容。</strong>比如，如果行动项是让每个程序员都“更仔细一些”，这是做不到的。因为“仔细”这件事很主观，你说程序员不仔细，程序员说我仔细了，这就是扯皮的开始。</p><p>而我们上面给出的行动项就是可检查的，项目经理控制输入的需求，我们可以用工作量衡量，还记得我们在讨论用户故事中提到的工作量评估的方式吗？</p><p>控制工作量怎么衡量？就是看每个阶段开发的总点数是不是比上一个阶段少了。而测试覆盖率更直接，直接写到构建脚本中，跑不过，不允许提交代码。</p><p>好，列好了一个个的行动项，接下来就是找责任人了，责任人要对行动项负责。</p><p>比如，项目经理负责需求控制，技术负责人负责将覆盖率加入构建脚本。有了责任人，我们就可以保障这个任务不是一个无头公案。下一次做回顾的时候，我们就可以拿着一个个的检查项询问负责人任务的完成情况了。</p><h2>5个为什么</h2><p>无论你是否采取回顾会议的方式进行复盘，分析问题，找到根因都是重要的一环。</p><p>你的团队如果能一下洞见到根因固然好，如果不能，那么最好多问一些为什么。具体怎么问，有一个常见的做法是：5个为什么（5 Whys）。这种做法是丰田集团的创始人丰田佐吉提出的，后来随着丰田生产方式而广为人知。</p><p>为什么要多问几个为什么？因为初始的提问，你能得到的只是表面原因，只有多问几个为什么，你才有可能找到根本原因。</p><p>我给你举个例子。服务器经常返回504，那我们可以采用“5个为什么”的方式来问一下。</p><ul>
+<li>为什么会出现504呢？因为服务器处理时间比较长，超时了。</li>
+<li>为什么会超时呢？因为服务器查询后面的 Redis 卡住了。</li>
+<li>为什么访问 Redis 会卡住呢？因为另外一个更新 Redis 的服务删除了大批量的数据，然后，重新插入，服务器阻塞了。</li>
+<li>为什么它要大批量的删除数据重新插入呢？因为更新算法设计得不合理。</li>
+<li>为什么一个设计得不合理的算法就能上线呢？因为这个设计没有按照流程进行评审。</li>
+</ul><p>问到这里，你就发现问题的根本原因了：设计没有经过评审。找到了问题的原因，解决之道自然就浮出水面了：一个核心算法一定要经过相关人员的评审。</p><p>当然，这只是一个例子。有时候，这个答案还不足以解决问题，我们还可以继续追问下去，比如，为什么没有按流程评审等等。</p><p><strong>所以，“5个为什么”中的“5”只是一个参考数字，不是目标。</strong></p><p>“5个为什么”是一个简单易上手的工具，你可能听了名字就知道该怎么用它。有一点需要注意的是，问题是顺着一条主线追问，不能问5个无关的问题。</p><p>无论是“回顾会议”也好，“5个为什么”也罢，其中最需要注意的点在于，不要用这些方法责备某个人。我们的目标是想要解决问题，不断地改进，而不是针对某个人发起情感批判。</p><h2>总结时刻</h2><p>在软件研发中，许多问题是反复出现的，很多开发团队会因此陷入无限“救火”中，解决这种问题一个好的办法就是复盘。</p><p>复盘，就是过程还原，进行研讨与分析，找到自我改进方法的一个方式。这种方式使我们拥有了客体化的视角，能够更客观地看待曾经发生过的一切。这种方法在很多领域中都得到了广泛的应用，比如股市和企业管理。</p><p>在软件开发中，也有一些复盘的实践。我给你详细介绍了“回顾会议”这种形式。</p><p>无论哪种做法，分析问题，找到根因是一个重要的环节。“5个为什么”就是一个常用的找到根因的方式。</p><p>如果今天的内容你只能记住一件事，那请记住：<strong>定期复盘，找准问题根因，不断改善。</strong></p><p>最后我想请你分享一下，你的团队是怎么解决这些反复出现的问题呢？欢迎在留言区写下你的做法。</p><p>感谢阅读，如果你觉得这篇文章对你有帮助的话，也欢迎把它分享给你的朋友。</p><p><img src="https://static001.geekbang.org/resource/image/b0/27/b0ac100b816b69b9f00634e65cb5e427.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/48/ee/872ad07e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">西西弗与卡夫卡</span>
+                            </div>
+                            <div class="bd">关于复盘，孙陶然曾经说过，如果他有所成就，一半要归功于复盘。他提出了几个步骤供大家参考。首先，先对比实际结果和期初所定目标之间有什么差距。其次，情景再现，回顾项目的几个阶段。然后，对每个阶段进行得失分析，找出问题原因。最后，总结规律，化作自己的技能沉淀，再次遇到时可以规避。我再补充一点，复盘资料应该记录到知识库，无论新来的或是接手的人，都能从中获益，从而提升组织的能力。另外，好的复盘需要有坦诚的文化氛围，不然有可能变成互相指责甩锅，就失去了意义 <br></div>
+                            <span class="time">2019-03-01 00:23</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">补充得非常好，一些能够形成体系的知识要积累下来。</p>
+                                <p class="reply-time">2019-03-01 07:36</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/da/41/780eecc1.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">阿智</span>
+                            </div>
+                            <div class="bd">其实，就是复盘如何落地。水土不服是很常见的 <br></div>
+                            <span class="time">2019-03-01 08:59</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">重点是你的团队想不想复盘。如果想，你会想办法复盘，如果不想，你会找各种借口不做。</p>
+                                <p class="reply-time">2019-03-01 15:22</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">grass10happy</span>
+                            </div>
+                            <div class="bd">复盘是不是最好是团队内部进行，每次老板参加复盘，好像就没人说出真话了。 <br></div>
+                            <span class="time">2019-03-01 08:25</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">篇幅原因，我省略这个部分，其实，最好先做一轮安全性投票，如果大家觉得不安全，可以把老板请出去。</p>
+                                <p class="reply-time">2019-03-01 15:21</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/f2/f2/11768924.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">毅</span>
+                            </div>
+                            <div class="bd">我觉得团队内复盘深度优先，多问问为什么。而团队间的复盘广度优先，多问问是什么有什么，比如研发不知道现场情况，实施就要多提供信息输入；其次协调好立场，个体间的或团队间的；最后不管队内队外，都要具备坚定的执行力复盘才会有效果。 <br></div>
+                            <span class="time">2019-03-01 22:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2b/58/11c05ccb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">One day</span>
+                            </div>
+                            <div class="bd">有类似复盘的思想，把每次出现问题记录，然后再讨论，只不过，讨论的是一个有点类似于问题库那种。把有过相似或者有联系的问题会再提出来，问题会分类，分类之后归档，问题与问题之间的有联系的了，就会有更多警觉 <br></div>
+                            <span class="time">2019-03-01 10:27</span>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

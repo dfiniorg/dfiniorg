@@ -1,0 +1,388 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                01讲10x程序员是如何思考的
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/8c/db/8c181c2b9b0b840762eb1f393ca974db.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>在开篇词中我们提到，程序员在工作中遇到的很多问题，大多不是程序问题，辛苦而低效的工作，多数是由偶然复杂度导致的。那这个由于偶然复杂度造成的差距会有多大呢？</p><p>1975年，弗雷德里克·布鲁克斯（Frederick Brooks）出版了软件行业的名著《人月神话》，他给出了一个统计结果，<strong>优秀程序员的开发效率是普通程序员的10倍。</strong>40多年过去了，这个数字得到了行业的普遍认同。</p><p>成为10x程序员是很多程序员的追求。但工作产出并不只是由写代码的效率决定的，一些不恰当工作方法很大程度上影响着你的产出。</p><p>在接下来的这段时间里，我希望通过这个专栏和你一起探讨，作为一个程序员，该如何更高效地工作，怎样才能把时间和精力尽可能地放在处理本质复杂度的事情上，减少在偶然复杂度上的消耗。</p><p>作为整个课程第一讲，我就从我常用的一个思考框架开始。</p><h2>一个思考框架</h2><p>我曾经组织过针对应届毕业生的培训，第一堂课我往往亲自操刀，其中有一个头脑风暴的环节“畅想未来”，我会让大家思考三个问题：</p><ul>
+<li>我现在是个什么水平？</li>
+<li>我想达到一个什么水平？</li>
+<li>我将怎样到达那个目标？</li>
+</ul><p>大家会围绕着这三个问题，从各种角度展开讨论。这是一个有趣的练习，你会发现大家“最擅长”的是回答第一个问题：我现在处于什么水平？和有经验的人相比，他们大多自认为比较“菜”。但对于后两个问题的讨论，却可以切实看出人和人之间处理问题的能力差异。</p><!-- [[[read_end]]] --><p>有人通过之前的资料搜集，已经对自己的未来有了一个打算。比如想成为一个研发大牛，或者想做一个开源软件等，也就是说，对于第二个问题，他有明确的答案。</p><p>而有的人则是一脸茫然，他很可能根本没有考虑过这个问题。而从题目本身来看，<strong>目标相对清晰的同学，才会进入到第三个问题，而茫然的同学，则完全无从下手。</strong></p><p>那么我为什么会问这几个问题呢？我是想让大家跳出现有的思考模式，摆脱仅凭直觉“闷头做事”的习惯方式，把低着的头抬起来，看一眼未来，给自己找一个方向。</p><p>否则，如果你对未来没有定位，是茫然的，尽管你也知道要努力，但劲儿该往哪里使呢？如果使劲的方向不对，那么你越使劲儿，可能会在错误的路上跑得越远。南辕北辙的道理大家都懂，但具体到自己的工作和发展上，真正能体会并实践的却是少数。</p><p>其实，这三个问题来自一个思考框架。在给其他公司团队做咨询时，我也经常会运用到它，原来的问题是：</p><ul>
+<li>Where are we?（我们现在在哪？）</li>
+<li>Where are we going?（我们要到哪儿去？）</li>
+<li>How can we get there?（我们如何到达那里？）</li>
+</ul><p>这三个问题实际上是帮我们确定：</p><ul>
+<li>现状；</li>
+<li>目标；</li>
+<li>实现路径。</li>
+</ul><p><strong>如果一个人能够清晰地回答出这三个问题，通常意味着他对要做的事有着清晰的认识。</strong>这个框架虽然看似简单，但却非常有效，它已经成为我工具箱里一件非常称手的思考工具。</p><p>在我的职业生涯里，与很多人讨论不同的事时，我都会用到这个思考框架的不同变体，而在这个专栏里，我也会用它来帮助回答“怎样高效工作、怎样做好软件”这件事。</p><h2>四个思考原则</h2><p>在实际的工作中，这个思考框架会帮助我更好地了解自己的工作。比如，当一个产品经理给我交代一个要开发的功能特性时，我通常会问他这样一些问题：</p><ul>
+<li>为什么要做这个特性，它会给用户带来怎样的价值？</li>
+<li>什么样的用户会用到这个特性，他们在什么场景下使用，他们又会怎样使用它？</li>
+<li>达成这个目的是否有其它手段？是不是一定要开发一个系统？</li>
+<li>这个特性上线之后，怎么衡量它的有效性？</li>
+</ul><p>如果产品经理能够回答好这些问题，说明他基本上已经把这个工作想得比较清楚了，这个时候，我才会放心地去了解后续的细节。</p><p>我们用思考框架对照一下，为什么我会问这些问题。一般来说，一个新特性要开发时，现状我是知道的。所以，我更关心目标，这里“为什么要做这个特性？”就是在问目标，“给用户带来怎样的价值”是在确定这个目标的有效性。</p><p>接下来，我会关注实现路径，用户会怎么用，是否有其他的替代手段，我需要了解产品经理的设计是经过思考的，还是“拍着脑袋”给出的。衡量有效性，则是要保证我的工作不会被浪费。</p><p>通过这个例子，我给你展示了怎么用这个思考框架提出问题。但我估计你更想了解的是，我怎么会想到问这些问题。<strong>给出思考框架是为了让你明白为什么要提出问题，而具体问题要怎么问，就可以遵循下面这四项原则：</strong></p><ul>
+<li>以终为始；</li>
+<li>任务分解；</li>
+<li>沟通反馈；</li>
+<li>自动化。</li>
+</ul><p>这是我从思考框架延伸出来的。在这个专栏里，我会围绕这四项原则和你详细讨论。</p><p>解释一下，<strong>以终为始</strong>就是在工作的一开始就确定好自己的目标。我们需要看到的是真正的目标，而不是把别人交代给我们的工作当作目标。你可以看出这个原则是在帮助我们回答思考框架中，Where are we going?（我们要到哪儿去？）这个问题。</p><p><strong>任务分解</strong>是将大目标拆分成一个一个可行的执行任务，工作分解得越细致，我们便越能更好地掌控工作，它是帮助我们回答思维框架中，How can we get there?（我们如何到达那里？）的问题。</p><p>如果说前两个原则是要在动手之前做的分析，那后面两个原则就是在通往目标的道路上，为我们保驾护航，因为<strong>在实际工作中，我们少不了与人和机器打交道</strong>。</p><p><strong>沟通反馈</strong>是为了疏通与其他人交互的渠道。一方面，我们保证信息能够传达出去，减少因为理解偏差造成的工作疏漏；另一方面，也要保证我们能够准确接收外部信息，以免因为自我感觉良好，阻碍了进步。</p><p><strong>自动化</strong>就是将繁琐的工作通过自动化的方式交给机器执行，这是我们程序员本职工作的一部分，我们擅长的是为其他人打造自动化的服务，但自己的工作却应用得不够，这也是我们工作中最值得优化的部分。</p><p>这四个原则互相配合，形成了一个对事情的衡量标准。总体上可以保证我的工作是有效的，在明确目标和完成目标的过程中，都可以尽量减少偶然复杂度。</p><p><img src="https://static001.geekbang.org/resource/image/ac/f8/ac7c923067660ebe0a1b646e616d7bf8.jpg" alt=""></p><p>怎么把这四个原则用在工作中呢？我们回过头来看一下前面的场景，产品经理把要做的功能特性摆在我面前。站在<strong>以终为始</strong>的角度，我需要了解真正的目标是什么，所以，我会关心<strong>为什么要做这个特性</strong>。为了保证目标是有效的，我会关心<strong>它给用户带来的价值</strong>。</p><p>有了<strong>任务分解</strong>的视角，我需要将一个大的目标进行拆解，如果我要达成这个目标，整体解决方案是远远不够的，我需要把任务分解成一个一个小的部分。所以，我会关心一个一个<strong>具体的使用场景</strong>。</p><p>一方面，我会了解到更多的细节，另一方面，当时间紧迫的时候，我会和产品经理来谈谈究竟优先实现哪个场景。</p><p>为什么要学会<strong>沟通反馈</strong>？因为我需要明确，自己是否真正理解了产品经理提交的需求。所以，我要不断地问问题，确保自己的理解和产品经理交代的内容一致。</p><p>另外，我也需要保证我的产品做出来确实能够达到目标。所以，我会关心它<strong>上线后的衡量手段</strong>。因为我知道，这个行业里有太多代码上线后，从来没有运行过。</p><p>自动化的角度很有意思，<strong>我们做的方案通常是一个自动化方案，但我们需要了解这个方案没有自动化之前是怎么做的。</strong>如果不自动化，用户会怎么用。所以，我会关心是不是还有其它替换方案，比如，买一个现成的服务。因为很多需求的提出，只是因为我们有了一个开发团队而已。</p><p>好，现在你已经对这四个原则在工作中的应用有了一个直观的认识。但你也会发现，我问的这些问题似乎已经“超纲”了，超过了一个普通程序员应该关注的范围。但这就是真实世界，它不像考试一样，有一个标准答案。</p><p><strong>我们不是一个人孤独地在工作，而是与其他人在协作，想要做到高效工作，我们就要“抬起头”来，跳出写代码这件事本身。所以，我在开篇词里说，程序员解决的问题，大多不是程序问题。</strong></p><p>可能你对这些原则的了解还没过瘾，没关系，这篇文章只是让大家清晰地了解思考框架和原则的背后逻辑。接下来，我会结合行业里的最佳实践，给你进一步讲解这些原则和具体应用。</p><h2>总结时刻</h2><p>总结一下今天的内容。大多数人工作低效是由于工作中偶然复杂度太多造成的，只要能够更多地将注意力放到本质复杂度上，减少偶然复杂度造成的消耗，我们“真实”的工作效率自然会得到大幅度提升。</p><p>而想要减少偶然复杂度的消耗，就要了解一些高效的工作方式和行业的最佳实践，而这一切是可以用统一的框架进行思考的。</p><p>运用这个思考框架，我们需要问自己一些问题：</p><ul>
+<li>Where are we?（我们现在在哪？）</li>
+<li>Where are we going?（我们要到哪儿去？）</li>
+<li>How can we get there?（我们如何到达那里？）</li>
+</ul><p>为了把这个框架应用在我们程序员的工作中，我给了你四个思考原则：</p><ul>
+<li>以终为始，确定好真实目标；</li>
+<li>任务分解，找到实施路径；</li>
+<li>沟通反馈，解决与人打交道出现的问题；</li>
+<li>自动化，解决与机器打交道出现的问题。</li>
+</ul><p>如果今天的内容你只能记住一件事，那请记住：<strong>面对问题时，用思考框架问问自己，现状、目标和路径。</strong></p><p>最后，我想请你思考一下，如果把这个思考框架运用在你的职业发展规划上，你会如何回答这三个问题呢？</p><p>感谢阅读，如果你觉得这篇文章对你有帮助的话，也欢迎把它分享给你的朋友。<br>
+<img src="https://static001.geekbang.org/resource/image/b0/27/b0ac100b816b69b9f00634e65cb5e427.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/47/ae/0a5f7a56.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">此方彼方Francis</span>
+                            </div>
+                            <div class="bd">这个方法论恐怕要建立在开发和产品双方地位比较平等的基础上。<br>以我们目前的现状，很多时候产品要做这需求的理由就一个：老板要的！ <br></div>
+                            <span class="time">2018-12-26 09:19</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">后面还真有一篇怎么对付顶着老板名义做事的产品经理，敬请期待。</p>
+                                <p class="reply-time">2018-12-26 10:30</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/14/50/c23cf47d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">李</span>
+                            </div>
+                            <div class="bd">现状：勉强的架构师、技术管理<br>目标：架构师、cto<br>途径：1.理论加强学习：togaf学习理论<br>          2.实践技能应用： netty、redis、mysql、niginx、微服务架构、分布式架构<br>          3.做微信公众号，多思考多积累经验，形成自己的套路，同时形成影响力。<br> <br></div>
+                            <span class="time">2018-12-26 09:47</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">codeparser</span>
+                            </div>
+                            <div class="bd">以终为始的理念还是非常有启发的，具体工作中往往会陷入细节中而看不到目标或者忽视目标，例如把实现路径当成了目标。同时，有了目标还需要不断的反思，孔子日三省吾身，我们起码按季度需要重新总结和考虑一下目标和路径的合理性。另外，文中讲到的沟通和自动化如果更加深入些就好了 <br></div>
+                            <span class="time">2018-12-26 09:29</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">后续内容会针对这四项原则进行深入探讨的，加油💪</p>
+                                <p class="reply-time">2018-12-26 10:07</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/f2/70/8159901c.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">David Mao</span>
+                            </div>
+                            <div class="bd">结合工作中每年都要基于现状制定KPI，但往往忽视了最重要的环节，实现途径或方法。老师讲的逻辑很清晰，简单明了。虽是简单的三个环节，但每个环节要想认识清楚，还是需要很深的功力。总结起来：<br>1. 认清现状<br>2. 制定切合实际的目标<br>3.落实切实可行的实现方法。  <br></div>
+                            <span class="time">2018-12-26 08:24</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">妮可</span>
+                            </div>
+                            <div class="bd">既是产品经理也是项目经理也是程序员，所以全部是我本职工作，IT部部长要的结果就是我的目标。 <br></div>
+                            <span class="time">2018-12-26 18:43</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/e9/69/779b48c2.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">苏忆</span>
+                            </div>
+                            <div class="bd">我觉得程序员的优秀程度最能体现在自动化这个环节中，高手首先对自己要到达的目的地的实现细节了如指掌，同时可以用较短的时间转化为自动化工具或者程序。同时超前的视野和丰富的开发经验也不是一个新手能很快拥有的。这两个都可以有效的缩短开发时间。那么问题来了，这些经验视野和高手所拥有的熟练度转化度怎么能更系统的来培养？ <br></div>
+                            <span class="time">2018-12-26 09:04</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/14/76/b3/d1d663f5.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Demi</span>
+                            </div>
+                            <div class="bd">计划赶不上变化，怎么办？ <br></div>
+                            <span class="time">2018-12-26 08:47</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">计划太大，变化就可怕，后面很多内容就是在讲拥抱变化。</p>
+                                <p class="reply-time">2018-12-26 09:34</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/82/ef/9a52bbfc.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">white_fisher</span>
+                            </div>
+                            <div class="bd">在哪？到哪去？怎么去？<br>答案：勉强程序员；架构师；知识储备深度广度，应用实践<br>问题：目的地变更了甚至不存在了怎么办？到达路径走不通或者出现了更好的路径怎么办？<br>总结：即时反馈，实时调整 <br></div>
+                            <span class="time">2018-12-26 08:08</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/88/c8/6fe08f30.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">WTF</span>
+                            </div>
+                            <div class="bd">老师举得针对拿到产品经理新特性要求之后的灵魂四连问，刨根究底，其实也是为了避免 X-Y Problem，免得浪费无谓的人力和精力。关于 X-Y problem，可以看下隔壁专栏作者耗叔的 https:&#47;&#47;coolshell.cn&#47;articles&#47;10804.html （我保证不是耗叔派来的，哈哈 <br></div>
+                            <span class="time">2018-12-27 23:21</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/13/2b/58/11c05ccb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">One day</span>
+                            </div>
+                            <div class="bd">老师的建议和指导都是非常有效，而且“感觉非常可行”，可是实际现实的情况，却有太多意外，我个人曾经在某银行的外包团队中，协同开发一个商户-收银以及集成了各种第三方的团队的接口等等，这个大项目大概有300人以上，由此我得leader不在，我代表开会，足足开了3-4个小时(约30个leader)。杂乱无章，从我个人开发角度无法去高屋建瓴的把握全局应用场景，使用价值之类的。但是每个模块之间互相调用联系，系统升级需要协作。首先，这里沟通成本很高，最要命的是需求变动，无法预测，有的时候新增需求，技术leader直接告诉我在什么地方写一个action，调用一个方法之类的。基本就是码农搬砖之类的，我想提的建议是：希望老师在有丰富理论知识，能给我们有一些实践中的例子，或者列举一些举一反三的例子，理论+实践，我觉得才是最佳法则(没有说老师只是有实际，没有实践，莫怪)，第一次这么长的留言，望采纳，谢谢您了 <br></div>
+                            <span class="time">2018-12-26 14:17</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">你的情况就是工作的上下文不足，这种情况你会很纠结，需要扩大自己的工作上下文，了解更多东西。这个话题后面会讲到。</p>
+                                <p class="reply-time">2018-12-26 18:51</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/88/21/50b2418a.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">alan</span>
+                            </div>
+                            <div class="bd">谢谢老师！听君一席话，胜读十年书。<br>现在：可能还不达标的“五级工程师”(五级工程师理论by吴军老师)<br>目标：四级工程师<br>路径：勤学苦练！主动寻求机会！ <br></div>
+                            <span class="time">2018-12-26 10:03</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/a8/64/965e0d9b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">王维</span>
+                            </div>
+                            <div class="bd">有点没懂自动化，为什么说这一块我们优化得不够呢？ <br></div>
+                            <span class="time">2018-12-26 08:35</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">在“自动化”版块中会进行详细讲解，可以关注后续更新～</p>
+                                <p class="reply-time">2018-12-26 11:49</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/5xLycKLPjYQlQQMicx50YLSfgAg6OJKMRiats1Qiba6yer7rqSVM3umNU9qKIfqJugIjlryAfjCnPSylSoON1q8CQ/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">blueguitar</span>
+                            </div>
+                            <div class="bd">现状:一个合格的member <br>目标:project manager <br>实施:具备项目管理技能，精通业务，能够提案和打单 <br></div>
+                            <span class="time">2019-01-06 15:25</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/50/39/371c9918.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">Xunqf</span>
+                            </div>
+                            <div class="bd">我们的产品经理的回答是：“你是在拷问我吗？这个你不需要知道，做出来就好了。”或者:“先做出来上线看看用户的反馈，不行了再下掉。”又或者：“这个是老板提的需求，优先级最高” <br></div>
+                            <span class="time">2019-01-05 23:16</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">不靠谱的产品经理，总拿老板说事，刚好是后面的两个主题，欢迎关注！<br><br>补充一点，不允许问问题的产品经理一看就是虚的，如果他不让提问，那就把问题带到老板面前，让老板判断一下，自己问的问题是不是合理，扩大上下文是解决问题的一个好办法，对，这也是后面的一个主题，敬请期待！</p>
+                                <p class="reply-time">2019-01-06 10:12</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/44/ec/8d3862c9.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">张维元</span>
+                            </div>
+                            <div class="bd">思考框架是道，原则是演化下的术，我们从 A → B，有无穷无尽的路径，最有效的唯有那条直线。本质上，各个维度、原则（不限于作者提到的四项原则）都是帮助我们更好地定位 A 在哪里，B 在哪里，那条直线在哪里。<br><br>这个思考工具算是吸收了，四项原则也是有借鉴意义，谢谢 <br></div>
+                            <span class="time">2019-01-03 23:10</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">这个理解真棒！</p>
+                                <p class="reply-time">2019-01-04 14:21</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/94/15/4c437907.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">超</span>
+                            </div>
+                            <div class="bd">现状：中级Java程序员<br>目标：架构师<br>实现路径：主要从技术和管理两个方面进行修炼提高，针对每个方面的能力要求，先制定长中期目标，然后拆分中期目标为短期目标，一个个击破，同时要检验目标达成效果，不断优化，从而实现自己的最终目标 <br></div>
+                            <span class="time">2019-01-01 21:22</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/c5/5e/24cc5a72.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">阿狸爱JAVA</span>
+                            </div>
+                            <div class="bd">遇到问题：运用我目前的现状如何，最终要达到怎样的目标，如何达到这个目标这个思考框架。<br>运用这个框架遵循以终为始，任务分解，沟通反馈，自动化四个原则。<br>和产品讨论需求时，多问一句为什么要做这个功能，这个功能上线要达到什么效果，是那些客户群体在用，如何评判这个功能的价值所在<br> <br></div>
+                            <span class="time">2018-12-31 15:33</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/50/a9/3f8c7418.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">MarksGui</span>
+                            </div>
+                            <div class="bd">目前我们团队产品经理要求做很多功能点，然而最终跟客户沟通客户关注的根本不是这些点。 这让我很苦恼。  <br></div>
+                            <span class="time">2018-12-30 16:55</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/94/c4/211e0ddf.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">朱小白RUN</span>
+                            </div>
+                            <div class="bd">我们存在很多功能都是顶着领导的要求做的，根本就不会考虑实际的可行性以及使用情况，导致花了时间精力开发出来的功能可能用过一次以后就再也不用了 <br></div>
+                            <span class="time">2018-12-29 09:57</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/ibZVAmmdAibBeVpUjzwId8ibgRzNk7fkuR5pgVicB5mFSjjmt2eNadlykVLKCyGA0GxGffbhqLsHnhDRgyzxcKUhjg/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">pyhhou</span>
+                            </div>
+                            <div class="bd">想问一下老师这里说的这些原则主要运用在自身长期的职业发展，还是说解决工作中的大小项目，看三个思考框架可以用在自我的评价以及期望目标上面，但是四个思考原则像是针对工作中的任务来的，对如何提高自身能力没有直接的对应，还请老师指明 <br></div>
+                            <span class="time">2018-12-28 13:24</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">文中的问题就是让你用思考框架中的三个问题回答自己长期的职业发展。</p>
+                                <p class="reply-time">2018-12-28 21:30</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

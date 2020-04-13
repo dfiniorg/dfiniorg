@@ -1,0 +1,255 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+
+#watermark {
+
+  position: relative;
+  overflow: hidden;
+}
+
+#watermark .x {
+  position: absolute;
+  top: 800;
+  left: 400;
+  color: #3300ff;
+  font-size: 50px;
+  pointer-events: none;
+  opacity:0.3;
+  filter:Alpha(opacity=50);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
+    </style>
+
+
+    <style type="text/css">
+ html{color:#333;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-rendering:optimizelegibility;font-family:Helvetica Neue,PingFang SC,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}html.borderbox *,html.borderbox :after,html.borderbox :before{box-sizing:border-box}article,aside,blockquote,body,button,code,dd,details,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}audio,canvas,video{display:inline-block}body,button,input,select,textarea{font:300 1em/1.8 PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,Helvetica,sans-serif}button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}blockquote{position:relative;color:#999;font-weight:400;border-left:1px solid #1abc9c;padding-left:1em;margin:1em 3em 1em 2em}@media only screen and (max-width:640px){blockquote{margin:1em 0}}abbr,acronym{border-bottom:1px dotted;font-variant:normal}abbr{cursor:help}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}ol,ul{list-style:none}caption,th{text-align:left}q:after,q:before{content:""}sub,sup{font-size:75%;line-height:0;position:relative}:root sub,:root sup{vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a{color:#1abc9c}a:hover{text-decoration:underline}.typo a{border-bottom:1px solid #1abc9c}.typo a:hover{border-bottom-color:#555;color:#555}.typo a:hover,a,ins{text-decoration:none}.typo-u,u{text-decoration:underline}mark{background:#fffdd1;border-bottom:1px solid #ffedce;padding:2px;margin:0 5px}code,pre,pre tt{font-family:Courier,Courier New,monospace}pre{background:hsla(0,0%,97%,.7);border:1px solid #ddd;padding:1em 1.5em;display:block;-webkit-overflow-scrolling:touch}hr{border:none;border-bottom:1px solid #cfcfcf;margin-bottom:.8em;height:10px}.typo-small,figcaption,small{font-size:.9em;color:#888}b,strong{font-weight:700;color:#000}[draggable]{cursor:move}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}.textwrap,.textwrap td,.textwrap th{word-wrap:break-word;word-break:break-all}.textwrap-table{table-layout:fixed}.serif{font-family:Palatino,Optima,Georgia,serif}.typo-dl,.typo-form,.typo-hr,.typo-ol,.typo-p,.typo-pre,.typo-table,.typo-ul,.typo dl,.typo form,.typo hr,.typo ol,.typo p,.typo pre,.typo table,.typo ul,blockquote{margin-bottom:1rem}h1,h2,h3,h4,h5,h6{font-family:PingFang SC,Helvetica Neue,Verdana,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;color:#000;line-height:1.35}.typo-h1,.typo-h2,.typo-h3,.typo-h4,.typo-h5,.typo-h6,.typo h1,.typo h2,.typo h3,.typo h4,.typo h5,.typo h6{margin-top:1.2em;margin-bottom:.6em;line-height:1.35}.typo-h1,.typo h1{font-size:2em}.typo-h2,.typo h2{font-size:1.8em}.typo-h3,.typo h3{font-size:1.6em}.typo-h4,.typo h4{font-size:1.4em}.typo-h5,.typo-h6,.typo h5,.typo h6{font-size:1.2em}.typo-ul,.typo ul{margin-left:1.3em;list-style:disc}.typo-ol,.typo ol{list-style:decimal;margin-left:1.9em}.typo-ol ol,.typo-ol ul,.typo-ul ol,.typo-ul ul,.typo li ol,.typo li ul{margin-bottom:.8em;margin-left:2em}.typo-ol ul,.typo-ul ul,.typo li ul{list-style:circle}.typo-table td,.typo-table th,.typo table caption,.typo table td,.typo table th{border:1px solid #ddd;padding:.5em 1em;color:#666}.typo-table th,.typo table th{background:#fbfbfb}.typo-table thead th,.typo table thead th{background:hsla(0,0%,95%,.7)}.typo table caption{border-bottom:none}.typo-input,.typo-textarea{-webkit-appearance:none;border-radius:0}.typo-em,.typo em,caption,legend{color:#000;font-weight:inherit}.typo-em{position:relative}.typo-em:after{position:absolute;top:.65em;left:0;width:100%;overflow:hidden;white-space:nowrap;content:"\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB\30FB"}.typo img{max-width:100%}.common-content{font-weight:400;color:#353535;line-height:1.75rem;white-space:normal;word-break:normal;font-size:1rem}.common-content img{display:block;max-width:100%;background-color:#eee}.common-content audio,.common-content video{width:100%;background-color:#eee}.common-content center,.common-content font{margin-top:1rem;display:inline-block}.common-content center{width:100%}.common-content pre{margin-top:1rem;padding-left:0;padding-right:0;position:relative;overflow:hidden}.common-content pre code{font-size:.8rem;font-family:Consolas,Liberation Mono,Menlo,monospace,Courier;display:block;width:100%;box-sizing:border-box;padding-left:1rem;padding-right:1rem;overflow-x:auto}.common-content hr{border:none;margin-top:1.5rem;margin-bottom:1.5rem;border-top:1px solid #f5f5f5;height:1px;background:none}.common-content b,.common-content h1,.common-content h2,.common-content h3,.common-content h4,.common-content h5,.common-content strong{font-weight:700}.common-content h1,.common-content h2{font-size:1.125rem;margin-bottom:.45rem}.common-content h3,.common-content h4,.common-content h5{font-size:1rem;margin-bottom:.45rem}.common-content p{font-weight:400;color:#353535;margin-top:.15rem}.common-content .orange{color:#ff5a05}.common-content .reference{font-size:1rem;color:#888}.custom-rich-content h1{margin-top:0;font-weight:400;font-size:15.25px;border-bottom:1px solid #eee;line-height:2.8}.custom-rich-content li,.custom-rich-content p{font-size:14px;color:#888;line-height:1.6}table.hljs-ln{margin-bottom:0;border-spacing:0;border-collapse:collapse}table.hljs-ln,table.hljs-ln tbody,table.hljs-ln td,table.hljs-ln tr{box-sizing:border-box}table.hljs-ln td{padding:0;border:0}table.hljs-ln td.hljs-ln-numbers{min-width:15px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;cursor:pointer;user-select:none}table.hljs-ln td.hljs-ln-code,table.hljs-ln td.hljs-ln-numbers{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:12px;line-height:20px;vertical-align:top}table.hljs-ln td.hljs-ln-code{position:relative;padding-right:10px;padding-left:10px;overflow:visible;color:#24292e;word-wrap:normal;white-space:pre}video::-webkit-media-controls{overflow:hidden!important}video::-webkit-media-controls-enclosure{width:calc(100% + 32px);margin-left:auto}.button-cancel{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel,.button-primary{-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary{color:#fff;background-color:#ff5a05;border-radius:3px}@font-face{font-family:iconfont;src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot);src:url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.woff) format("woff"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.ttf) format("truetype"),url(//at.alicdn.com/t/font_372689_bwwwtosxtzp.svg#iconfont) format("svg")}@font-face{font-family:player-font;src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot);src:url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.woff) format("woff"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.ttf) format("truetype"),url(//at.alicdn.com/t/font_509397_1cyjv4o90qiod2t9.svg#player-font) format("svg")}.iconfont{font-family:iconfont!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}html{background:#fff;min-height:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{width:100%}body.fixed{overflow:hidden;position:fixed;width:100vw;height:100vh}i{font-style:normal}a{word-wrap:break-word;-webkit-tap-highlight-color:rgba(0,0,0,0)}a:hover{text-decoration:none}.fade-enter-active,.fade-leave-active{transition:opacity .3s}.fade-enter,.fade-leave-to{opacity:0}.MathJax,.MathJax_CHTML,.MathJax_MathContainer,.MathJax_MathML,.MathJax_PHTML,.MathJax_PlainSource,.MathJax_SVG{outline:0}.ios-app-switch .js-audit{display:none}._loading_wrap_{position:fixed;width:100vw;height:100vh;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999}._loading_div_class_,._loading_wrap_{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}._loading_div_class_{word-wrap:break-word;padding:.5rem .75rem;text-align:center;z-index:9999;font-size:.6rem;max-width:60%;color:#fff;border-radius:.25rem;-ms-flex-direction:column;flex-direction:column}._loading_div_class_ .message{color:#353535;font-size:16px;line-height:3}.spinner{animation:circle-rotator 1.4s linear infinite}.spinner *{line-height:0;box-sizing:border-box}@keyframes circle-rotator{0%{transform:rotate(0deg)}to{transform:rotate(270deg)}}.path{stroke-dasharray:187;stroke-dashoffset:0;transform-origin:center;animation:circle-dash 1.4s ease-in-out infinite,circle-colors 5.6s ease-in-out infinite}@keyframes circle-colors{0%{stroke:#ff5a05}to{stroke:#ff5a05}}@keyframes circle-dash{0%{stroke-dashoffset:187}50%{stroke-dashoffset:46.75;transform:rotate(135deg)}to{stroke-dashoffset:187;transform:rotate(450deg)}}.confirm-box-wrapper,.confirm-box-wrapper .mask{position:absolute;top:0;left:0;right:0;bottom:0}.confirm-box-wrapper .mask{background:rgba(0,0,0,.6)}.confirm-box-wrapper .confirm-box{position:fixed;top:50%;left:50%;width:267px;background:#fff;transform:translate(-50%,-50%);border-radius:7px}.confirm-box-wrapper .confirm-box .head{margin:0 18px;font-size:18px;text-align:center;line-height:65px;border-bottom:1px solid #d9d9d9}.confirm-box-wrapper .confirm-box .body{padding:18px;padding-bottom:0;color:#353535;font-size:12.5px;max-height:150px;overflow:auto}.confirm-box-wrapper .confirm-box .foot{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;padding:18px}.confirm-box-wrapper .confirm-box .foot .button-cancel{border:1px solid #d9d9d9}.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}
+
+
+
+
+    </style>
+    <style type="text/css">
+        .button-cancel[data-v-87ffcada]{color:#888;border:1px solid #888;border-radius:3px;margin-right:12px}.button-cancel[data-v-87ffcada],.button-primary[data-v-87ffcada]{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:35px;display:inline-block;font-size:15px;text-align:center;line-height:36px}.button-primary[data-v-87ffcada]{color:#fff;background-color:#ff5a05;border-radius:3px}.pd[data-v-87ffcada]{padding-left:1.375rem;padding-right:1.375rem}.article[data-v-87ffcada]{max-width:70rem;margin:0 auto}.article .article-unavailable[data-v-87ffcada]{color:#fa8919;font-size:15px;font-weight:600;line-height:24px;border-radius:5px;padding:12px;background-color:#f6f7fb;margin-top:20px}.article .article-unavailable .iconfont[data-v-87ffcada]{font-size:12px}.article .main[data-v-87ffcada]{padding:1.25rem 0;margin-bottom:52px}.article-title[data-v-87ffcada]{color:#353535;font-weight:400;line-height:1.65rem;font-size:1.34375rem}.article-info[data-v-87ffcada]{color:#888;font-size:.9375rem;margin-top:1.0625rem}.article-content[data-v-87ffcada]{margin-top:1.0625rem}.article-content.android video[data-v-87ffcada]::-webkit-media-controls-fullscreen-button{display:none}.copyright[data-v-87ffcada]{color:#b2b2b2;padding-bottom:20px;margin-top:20px;font-size:13px}.audio-player[data-v-87ffcada]{width:100%;margin:20px 0}.to-comment[data-v-87ffcada]{overflow:hidden;padding-top:10px;margin-bottom:-30px}.to-comment a.button-primary[data-v-87ffcada]{float:right;height:20px;font-size:12px;line-height:20px;padding:4px 8px;cursor:pointer}.article-comments[data-v-87ffcada]{margin-top:2rem}.article-comments h2[data-v-87ffcada]{text-align:center;color:#888;position:relative;z-index:1;margin-bottom:1rem}.article-comments h2[data-v-87ffcada]:before{border-top:1px dotted #888;content:"";position:absolute;top:56%;left:0;width:100%;z-index:-1}.article-comments h2 span[data-v-87ffcada]{font-size:15.25px;font-weight:400;padding:0 1rem;background:#fff;display:inline-block}.article-sub-bottom[data-v-87ffcada]{z-index:10;cursor:pointer}.switch-btns[data-v-87ffcada]{height:76px;cursor:pointer;padding-top:24px;padding-bottom:24px;border-bottom:10px solid #f6f7fb;position:relative}.switch-btns[data-v-87ffcada]:before{content:" ";height:1px;background:#e8e8e8;position:absolute;top:0;left:0;-webkit-box-sizing:border-box;box-sizing:border-box;left:1.375rem;right:1.375rem}.switch-btns .btn[data-v-87ffcada]{height:38px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.switch-btns .btn .tag[data-v-87ffcada]{-webkit-box-flex:0;-ms-flex:0 0 62px;flex:0 0 62px;text-align:center;color:#888;font-size:14px;border-radius:10px;height:22px;line-height:22px;background:#f6f7fb;font-weight:400}.switch-btns .btn .txt[data-v-87ffcada]{margin-left:10px;-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;color:#888;font-size:15px;height:22px;line-height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}@media (max-width:769px){.article .breadcrumb[data-v-87ffcada]{padding-top:10px;padding-bottom:10px}}
+
+
+
+
+
+    </style>
+
+    <style type="text/css">
+        .comment-item{list-style-position:inside;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:1rem}.comment-item a{border-bottom:none}.comment-item .avatar{width:2.625rem;height:2.625rem;-ms-flex-negative:0;flex-shrink:0;border-radius:50%}.comment-item .info{margin-left:.5rem;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.comment-item .info .hd{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .username{color:#888;font-size:15.25px;font-weight:400;line-height:1.2}.comment-item .info .hd .control{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.comment-item .info .hd .control .btn-share{color:#888;font-size:.75rem;margin-right:1rem}.comment-item .info .hd .control .btn-praise{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15.25px;text-decoration:none}.comment-item .info .hd .control .btn-praise i{color:#888;display:inline-block;font-size:.75rem;margin-right:.3rem;margin-top:-.01rem}.comment-item .info .hd .control .btn-praise i.on,.comment-item .info .hd .control .btn-praise span{color:#ff5a05}.comment-item .info .bd{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all;line-height:1.6}.comment-item .info .time{color:#888;font-size:9px;line-height:1}.comment-item .info .reply .reply-hd{font-size:15.25px}.comment-item .info .reply .reply-hd span{margin-left:-12px;color:#888;font-weight:400}.comment-item .info .reply .reply-hd i{color:#ff5a05;font-size:15.25px}.comment-item .info .reply .reply-content{color:#353535;font-size:15.25px;font-weight:400;white-space:normal;word-break:break-all}.comment-item .info .reply .reply-time{color:#888;font-size:9px}
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+
+    <div data-v-87ffcada="" class="article" id="watermark">
+        <p class="x"></p>
+        <div data-v-87ffcada="" class="main main-app">
+            <h1 data-v-87ffcada="" class="article-title pd">
+                16讲为什么你的测试不够好
+            </h1>
+            <div data-v-87ffcada="" class="article-content typo common-content pd"><img data-v-87ffcada=""
+                                                                                        src="https://static001.geekbang.org/resource/image/23/20/237d0b57ed102015122000c3c26a2520.jpg">
+
+
+                <div data-v-87ffcada="" id="article-content" class="">
+                    <div class="text">
+                        <p>你好！我是郑晔。今天是除夕，我在这里给大家拜年了，祝大家在新的一年里，开发越做越顺利！</p><p>关于测试，我们前面讲了很多，比如：开发者应该写测试；要写可测的代码；要想做好 TDD，先要做好任务分解，我还带你进行了实战操作，完整地分解了一个任务。</p><p>但有一个关于测试的重要话题，我们始终还没聊，那就是测试应该写成什么样。今天我就来说说怎么把测试写好。</p><p>你或许会说，这很简单啊，前面不都讲过了吗？不就是用测试框架写代码吗？其实，理论上来说，还真应该就是这么简单，但现实情况却往往相反。我看到过很多团队在测试上出现过各种各样的问题，比如：</p><ul>
+<li>测试不稳定，这次能过，下次过不了；</li>
+<li>有时候是一个测试要测的东西很简单，测试周边的依赖很多，搭建环境就需要很长的时间；</li>
+<li>这个测试要运行，必须等到另外一个测试运行结束；</li>
+<li>……</li>
+</ul><p>如果你也在工作中遇到过类似的问题，那你理解的写测试和我理解的写测试可能不是一回事，那问题出在哪呢？</p><p>为什么你的测试不够好呢？</p><p><strong>主要是因为这些测试不够简单。只有将复杂的测试拆分成简单的测试，测试才有可能做好。</strong></p><h2>简单的测试</h2><p>测试为什么要简单呢？有一个很有趣的逻辑，不知道你想没想过，测试的作用是什么？显然，它是用来保证代码的正确性。随之而来的一个问题是，谁来保证测试的正确性？</p><!-- [[[read_end]]] --><p>许多人第一次面对这个问题，可能会一下子懵住，但脑子里很快便会出现一个答案：测试。但是，你见有人给测试写测试吗？肯定没有。因为一旦这么做，这个问题会随即上升，谁来保证那个测试的正确性呢？你总不能无限递归地给测试写测试吧。</p><p>既然无法用写程序的方式保证测试的正确性，我们只有一个办法：<strong>把测试写简单，简单到一目了然，不需要证明它的正确性。</strong>所以，如果你见到哪个测试写得很复杂，它一定不是一个好的测试。</p><p>既然说测试应该简单，我们就来看看一个简单的测试应该是什么样子。下面我给出一个简单的例子，你可以看一下。</p><pre><code>@Test
+void should_extract_HTTP_method_from_HTTP_request() {
+  // 前置准备
+  request = mock(HttpRequest.class);
+  when(request.getMethod()).thenReturn(HttpMethod.GET);
+  HttpMethodExtractor extractor = new HttpMethodExtractor();
+  
+  // 执行
+  HttpMethod method = extractor.extract(request);
+  
+  // 断言
+  assertThat(method, is(HttpMethod.GET);
+  
+  // 清理
+}
+</code></pre><p>这个测试来自我的开源项目 <a href="http://github.com/dreamhead/moco">Moco</a>，我稍做了一点调整，便于理解。这个测试很简单，从一个 HTTP 请求中提取出 HTTP 方法。</p><p>我把这段代码分成了四段，分别是<strong>前置准备、执行、断言和清理</strong>，这也是一般测试要具备的四段。</p><ul>
+<li>这几段的核心是中间的执行部分，它就是测试的目标，但实际上，它往往也是最短小的，一般就是一行代码调用。其他的部分都是围绕它展开的，在这里就是调用 HTTP 方法提取器提取 HTTP 方法。</li>
+<li>前置准备，就是准备执行部分所需的依赖。比如，一个类所依赖的组件，或是调用方法所需要的参数。在这个测试里面，我们准备了一个 HTTP 请求，设置了它的方法是一个 GET 方法，这里面还用到了之前提到的 Mock 框架，因为完整地设置一个 HTTP 请求很麻烦，而且与这个测试也没什么关系。</li>
+<li>断言是我们的预期，就是这段代码执行出来怎么算是对的。这里我们判断了提取出来的方法是否是 GET 方法。另外补充一点，断言并不仅仅是 assert，如果你用 Mock 框架的话，用以校验 mock 对象行为的 verify 也是一种断言。</li>
+<li>清理是一个可能会有的部分，如果你的测试用到任何资源，都可以在这里释放掉。不过，如果你利用好现有的测试基础设施（比如，JUnit 的 Rule），遵循好测试规范的话，很多情况下，这个部分就会省掉了。</li>
+</ul><p>怎么样，看着很简单吧，是不是符合我前面所说的不证自明呢？</p><h2>测试的坏味道</h2><p>有了对测试结构的了解，我们再来说说常见的测试“坏味道”。</p><p>首先是执行部分。不知道你有没有注意到，前面我提到执行部分时用了一个说法，一行代码调用。是的，第一个“坏味道”就来自这里。</p><p>很多人总想在一个测试里做很多的事情，比如，出现了几个不同方法的调用。请问，你的代码到底是在测试谁呢？</p><p><strong>这个测试一旦出错，就需要把所有相关的几个方法都查看一遍，这无疑是增加了工作的复杂度。</strong></p><p>也许你会问，那我有好几个方法要测试，该怎么办呢？很简单，多写几个测试就好了。</p><p>另一个典型“坏味道”的高发区是在断言上，请记住，<strong>测试一定要有断言。</strong>没有断言的测试，是没有意义的，就像你说自己是世界冠军，总得比个赛吧！</p><p>我见过不少人写了不少测试，但测试运行几乎从来就不会错。出于好奇，我打开代码一看，没有断言。</p><p>没有断言当然就不会错了，写测试的同事还很委屈地说，测试不好写，而且，他已经验证了这段代码是对的。就像我前面讲过的，测试不好写，往往是设计的问题，应该调整的是设计，而不是在测试这里做妥协。</p><p>还有一种常见的“坏味道”：复杂。最典型的场景是，当你看到测试代码里出现各种判断和循环语句，基本上这个测试就有问题了。</p><p>举个例子，测试一个函数，你的断言写在一堆 if 语句中，美其名曰，根据条件执行。还是前面提到的那个观点，你怎么保证这个测试函数写的是对的？除非你用调试的手段，否则，你都无法判断你的条件分支是否执行到了。</p><p>你或许会疑问，我有一大堆不同的数据要测，不用循环不用判断，我怎么办呢？<strong>你真正应该做的是，多写几个测试，每个测试覆盖一种场景。</strong></p><h2>一段旅程（A-TRIP）</h2><p>怎么样的测试算是好的测试呢？有人做了一个总结 A-TRIP，这是五个单词的缩写，分别是</p><ul>
+<li>Automatic，自动化；</li>
+<li>Thorough，全面的；</li>
+<li>Repeatable，可重复的；</li>
+<li>Independent，独立的；</li>
+<li>Professional，专业的。</li>
+</ul><p>下面，我们看看这几个单词分别代表什么意思。</p><p><strong>Automatic，自动化。</strong>有了前面关于自动化测试的铺垫，这可能最好理解，就是把测试尽可能交给机器执行，人工参与的部分越少越好。</p><p>这也是我们在前面说，测试一定要有断言的原因，因为一个测试只有在有断言的情况下，机器才能自动地判断测试是否成功。</p><p><strong>Thorough，全面，应该尽可能用测试覆盖各种场景。</strong>理解这一点有两个角度。一个是在写代码之前，要考虑各种场景：正常的、异常的、各种边界条件；另一个角度是，写完代码之后，我们要看测试是否覆盖了所有的代码和所有的分支，这就是各种测试覆盖率工具发挥作用的场景了。</p><p>当然，你想做到全面，并非易事，如果你的团队在补测试，一种办法是让测试覆盖率逐步提升。</p><p><strong>Repeatable，可重复的。</strong>这里面有两个角度：某一个测试反复运行，结果应该是一样的，这说的是，每一个测试本身都不应该依赖于任何不在控制之下的环境。如果有，怎么办，想办法。</p><p>比如，如果有外部的依赖，就可以采用模拟服务的手段，我的 <a href="http://github.com/dreamhead/moco">Moco</a> 就是为了解决外部依赖而生的，它可以模拟外部的 HTTP 服务，让测试变得可控。</p><p>有的测试会依赖数据库，那就在执行完测试之后，将数据库环境恢复，像 Spring 的测试框架就提供了测试数据库回滚的能力。如果你的测试反复运行，不能产生相同的结果，要么是代码有问题，要么是测试有问题。</p><p>理解可重复性，还有一个角度，一堆测试反复运行，结果应该是一样的。这说明测试和测试之间没有任何依赖，这也是我们接下来要说的测试的另外一个特点。</p><p><strong>Independent，独立的。</strong>测试和测试之间不应该有任何依赖，什么叫有依赖？比如，如果测试依赖于外部数据库或是第三方服务，测试 A 在运行时在数据库里写了一些值，测试 B 要用到数据库里的这些值，测试 B 必须在测试 A 之后运行，这就叫有依赖。</p><p>我们不能假设测试是按照编写顺序运行的。比如，有时为了加快测试运行速度，我们会将测试并行起来，在这种情况下，顺序是完全无法保证的。如果测试之间有依赖，就有可能出现各种问题。</p><p>减少外部依赖可以用 mock，实在要依赖，每个测试自己负责前置准备和后续清理。如果多个测试都有同样的准备和清理呢？那不就是 setup 和 teardown 发挥作用的地方吗？测试基础设施早就为我们做好了准备。</p><p><strong>Professional，专业的。</strong>这一点是很多人观念中缺失的，测试代码，也是代码，也要按照代码的标准去维护。这就意味着你的测试代码也要写得清晰，比如：良好的命名，把函数写小，要重构，甚至要抽象出测试的基础库，在 Web 测试中常见的 PageObject 模式，就是这种理念的延伸。</p><p>看了这点，你或许会想，你说的东西有点道理，但我的代码那么复杂，测试路径非常多，我怎么能够让自己的测试做到满足这些要求呢？</p><p>我必须强调一个之前讲测试驱动开发强调过的观点：<strong>编写可测试的代码。</strong>很多人写不好测试，或者觉得测试难写，关键就在于，你始终是站在写代码的视角，而不是写测试的视角。如果你都不重视测试，不给测试留好空间，测试怎么能做好呢？</p><h2>总结时刻</h2><p>总结一下今天的内容。测试是一个说起来很简单，但很不容易写好的东西。在实际工作中，很多人都会遇到关于测试的各种各样问题。之所以出现问题，主要是因为这些测试写得太复杂了。测试一旦复杂了，我们就很难保证测试的正确性，何谈用测试保证代码的正确性。</p><p>我给你讲了测试的基本结构：前置准备、执行、断言和清理，还介绍了一些常见的测试“坏味道”：做了太多事的测试，没有断言的测试，还有一种看一眼就知道有问题的“坏味道”，测试里有判断语句。</p><p>怎么衡量测试是否做好了呢？有一个标准：A-TRIP，这是五个单词的缩写，分别是Automatic（自动化）、Thorough（全面）、Repeatable（可重复的）、Independent（独立的）和 Professional（专业的）。</p><p>如果今天的内容你只能记住一件事，那请记住：<strong>要想写好测试，就要写简单的测试。</strong></p><p>最后，我想请你分享一下，经过最近持续对测试的讲解，你对测试有了哪些与之前不同的理解呢？欢迎在留言区写下你的想法。</p><p>感谢阅读，如果你觉得这篇文章对你有帮助的话，也欢迎把它分享给你的朋友。<br>
+<img src="https://static001.geekbang.org/resource/image/b0/27/b0ac100b816b69b9f00634e65cb5e427.jpg" alt=""></p>
+                    </div>
+                </div>
+
+            </div>
+            <div data-v-87ffcada="" class="article-comments pd"><h2 data-v-87ffcada=""><span
+                    data-v-87ffcada="">精选留言</span></h2>
+                <ul data-v-87ffcada="">
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/f2/f2/11768924.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">毅</span>
+                            </div>
+                            <div class="bd">本节课我有以下几点体会：<br>1、从开发者的视角看编码和测试是不分家的，是可以通过重构形成良性生态圈的，类似之前课程中的反馈模型和红绿重构模型；<br>2、A-TRIP是个很好的总结和行动指南，在今后工作中应一以贯之，把工作做到扎实有成效；<br>3、对文中提到的数据库依赖的问题，我也说说自己的浅见。我觉得在测试代码中尽量避免与数据库打交道，测试更关注领域与业务，往往爆雷更多的是resource和service，模型的变化往往牵动着表结构的变化，与其两头兼顾不如多聚焦模型，我常用的做法是用例配合若干小文件(数据忠实于模型)，保证库操作临门一脚前所有环节都是正确的，同时方便适应变化。一旦出现异常，也比较容易定位是否是数据库操作引发的问题。<br> (此点基于工作中发现项目型程序员大多是先急于把表结构定义出来，好像不这么做写代码就不踏实) <br></div>
+                            <span class="time">2019-02-04 13:22</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/48/ee/872ad07e.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">西西弗与卡夫卡</span>
+                            </div>
+                            <div class="bd">可重复特别重要，有些开发在本地测和数据库相关应用时，由于前置依赖数据比较多，为了避免测试前写冗长的数据准备代码，所以会预先在数据库中准备好初始数据。每个测试再初始化特定的数据，因为Spring测试框架可以自动回滚，所以在本地是可以重复跑的。但是，放到CI中时，测试就统统没法过了，因为CI的数据库是共用的，没有本地的那份初始化数据集。一种方式是，保持数据库干净，用测试时用初始化脚本准备数据。如果测的场景比较复杂，比如要测多个事务的交互结果，还可以引入Docker，将依赖的数据库及初始化数据做成Docker的image，测试代码就更加简单，并且可以重复运行了，只要CI支持Docker即可 <br></div>
+                            <span class="time">2019-02-04 01:43</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">很好的分享！</p>
+                                <p class="reply-time">2019-02-04 10:11</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/15/0e/02/c0c525f7.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">九月三秋</span>
+                            </div>
+                            <div class="bd">让我感觉到写测试是相当重要 <br></div>
+                            <span class="time">2019-02-11 17:46</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/10/f4/87/644c0c5d.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">俊伟</span>
+                            </div>
+                            <div class="bd">以前我一直觉得先开发完，再写测试。而现在，通过专栏学习让我明白了，要去站在测试的角度去写代码。首先写测试，然后再想办法去实现逻辑。写代码的时候要时刻记住&quot;我的代码应该怎么写才可以通过测试&quot;。<br>其次测试还要写的尽可能简单，一个测试只测试一个功能。测试还不能依赖外部的环境，测试可以重复运行，而结果要保持一致。测试也是也要符合代码的规范。测试还要确保覆盖所有情况，不能出现无断言的测试。 <br></div>
+                            <span class="time">2019-02-11 12:36</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">其实，测试驱动开发才是最好的以终为始案例。</p>
+                                <p class="reply-time">2019-02-14 08:38</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/12/f2/f2/11768924.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">毅</span>
+                            </div>
+                            <div class="bd">祝新年快乐！ <br></div>
+                            <span class="time">2019-02-04 13:24</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">新年快乐🎉</p>
+                                <p class="reply-time">2019-02-04 20:33</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/96/63/fdbf75eb.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">捞鱼的搬砖奇</span>
+                            </div>
+                            <div class="bd">测试不仅是测试人员的工作。更是开发人员的工作。之前的工作的中自测，常常潜意识的里只会考虑正常的情况，比如输入姓名的input，只会输入不超过三个字符的长度，到测试手冲，会输入一长串，因为程序中没有做长度检查，超过数据库字段长度成都就挂了。后来自己总结，发现测试人员的测试会带着破坏的性质，开发人员总是认为一切操作都是合理的。<br><br>看完了文章后，会继续完善之前的总结。把什么场景可能出现什么情况，罗列出来，方便工作中的对照检查。 <br></div>
+                            <span class="time">2019-02-04 10:21</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">程序员要学点测试知识，比如，测试等价类的划分，破坏性测试等等，当你开始重视测试了，代码质量才会提高。</p>
+                                <p class="reply-time">2019-02-14 08:29</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="http://thirdwx.qlogo.cn/mmopen/vi_32/gUrsZ7qVBOOdjbicqr5raIjT3MGV1LtmzNR2puebKMpsOSeRbVKSFppKUM5Zk8Fg5ic9SzQZ6yEuVAWJ2gVnica6w/132" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">非鱼</span>
+                            </div>
+                            <div class="bd">收益了，新年快乐 <br></div>
+                            <span class="time">2019-02-04 09:09</span>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/0f/4b/b4/4768f34b.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">旭</span>
+                            </div>
+                            <div class="bd">老师春节快乐~ 开发和测试更像是矛盾的双方，对立但统一。之前做开发感觉测试影响了开发的效率，没事找事；后来接触测试感觉开发太过功利，只为实现而实现，实现不等于可用。矛与盾，同时在手，或许才能更好的战斗。 <br></div>
+                            <span class="time">2019-02-04 08:54</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">所以，要扩大自己的上下文。:)</p>
+                                <p class="reply-time">2019-02-04 10:12</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+                    <li data-v-87ffcada="" class="comment-item"><img
+                            src="https://static001.geekbang.org/account/avatar/00/11/16/eb/30864e40.jpg" class="avatar">
+                        <div class="info">
+                            <div class="hd"><span class="username">漂泊者及其影子</span>
+                            </div>
+                            <div class="bd">新年快乐，基于spring的单元测试启动慢，耗内存，耗CPU，怎么解决 <br></div>
+                            <span class="time">2019-02-04 08:53</span>
+                            
+                            <div class="reply">
+                                <div class="reply-hd"><span>作者回复</span></div>
+                                <p class="reply-content">涉及到Spring就不是单元测试，至少是集成测试了，参见前面的测试金字塔，多写单元测试。集成测试慢点是可以接受的。</p>
+                                <p class="reply-time">2019-02-04 10:11</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
